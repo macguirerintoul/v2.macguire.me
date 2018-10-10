@@ -1,29 +1,54 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import {Link} from 'gatsby'
 import styled from 'styled-components'
 
-import Container from './Container'
-
 const StyledHeader = styled.div`
-  min-height: 3.25rem;
+  min-height: 5em;
   position: relative;
 
   & > .container {
     align-items: stretch;
     display: flex;
-    min-height: 3.25rem;
+    min-height: 5em;
     width: 100%;
+  }
+`
+
+const StyledNav = styled.nav`
+  min-height: 5em;
+  top: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 30;
+  background: rgba(255,255,255,0.75);
+  .container {
+    align-items: stretch;
+    display: flex;
+    min-height: 5em;
+    width: 100%;
+  }
+  .navbar-brand {
+    align-items: center;
+    display: flex;
+    flex-shrink: 0;
+  }
+  .navbar-menu {
+    flex-grow: 1;
+    flex-shrink: 0;
+    align-items: stretch;
+    display: flex;
   }
 `
 
 const Header = () => (
   <StyledHeader>
-    <nav className="navbar is-fixed-top is-transparent">
+    <StyledNav>
       <div className="container">
       <div className="navbar-brand">
-        <a className="navbar-item" href="index.html">
+        <Link to='/'>
           <h1 className="title is-5">Macguire Rintoul</h1>
-        </a>
+        </Link>
         <div className="navbar-burger burger" data-target="navbarMenu">
           <span></span>
           <span></span>
@@ -39,7 +64,7 @@ const Header = () => (
         </div>
       </div>
       </div>
-    </nav>
+    </StyledNav>
   </StyledHeader>
 )
 

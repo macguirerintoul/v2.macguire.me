@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import Layout from '../components/layout'
 import thumbnailRoar from '../images/thumbnail-roar.png'
 import thumbnailWinebox from '../images/thumbnail-winebox.png'
+import thumbnailSFUCode from '../images/thumbnail-sfu-code.png'
 import thumbnailPrivileged from '../images/thumbnail-privileged.png'
 import thumbnailSignal from '../images/thumbnail-signal.jpg'
 import thumbnailSkype from '../images/thumbnail-skype.png'
@@ -17,8 +18,9 @@ const ProjectsContainer = styled.div`
 
 const Intro = styled.h1`
   font-size: 3.5em;
-  line-height: 1.5em;
+  line-height: 1.2em;
   width: 50%;
+  color: #0030FF;
   text-shadow: 2px 2px #FF0000;
 `
 
@@ -79,11 +81,15 @@ const IndexPage = () => (
       <Intro>experience designer and developer</Intro>
       <ProjectCard path="/roar/" thumbnail={thumbnailRoar}>
         <h2>ROAR</h2>
-        <p>web app that allows the health authority to more easily manage new hires and their staff orientation sessions</p>
+        <p>web app enabling Vancouver Coastal Health to more easily manage new hires and their staff orientation sessions</p>
       </ProjectCard>
       <ProjectCard path="/winebox/" thumbnail={thumbnailWinebox}>
         <h2>Winebox</h2>
         <p>multi-platform application that elegantly assists in keeping track of a personal wine collection</p>
+      </ProjectCard>
+      <ProjectCard path="/sfucode/" thumbnail={thumbnailSFUCode}>
+        <h2>SFU Code</h2>
+        <p>student club at Simon Fraser University to bring together the student developer community</p>
       </ProjectCard>
       <ProjectCard path="/privileged/" thumbnail={thumbnailPrivileged}>
         <h2>privileged.tech</h2>
