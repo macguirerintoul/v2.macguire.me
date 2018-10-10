@@ -5,6 +5,10 @@ import styled from 'styled-components'
 import Layout from '../components/layout'
 import thumbnailRoar from '../images/thumbnail-roar.png'
 import thumbnailWinebox from '../images/thumbnail-winebox.png'
+import thumbnailPrivileged from '../images/thumbnail-privileged.png'
+import thumbnailSignal from '../images/thumbnail-signal.jpg'
+import thumbnailSkype from '../images/thumbnail-skype.png'
+import thumbnailSlack from '../images/thumbnail-slack.png'
 
 const ProjectsContainer = styled.div`
   display: flex;
@@ -12,6 +16,8 @@ const ProjectsContainer = styled.div`
 `
 
 const Intro = styled.h1`
+  font-size: 3.5em;
+  line-height: 1.5em;
   width: 50%;
   text-shadow: 2px 2px #FF0000;
 `
@@ -20,19 +26,35 @@ const StyledProjectCard = styled.div`
   position: relative;
   background-image: url("${props => props.thumbnail}");
   background-size: cover;
+  height: 100%;
   min-height: 20em;
-  width: 50%;
-  :hover {
-    color: red;
+  width: 100%;
+  color: #FFF;
+  & * {
+    transition: all 0.25s;
   }
 `
 
-const Content = styled.div`
+const StyledCardCover = styled.div`
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(0,0,0,0.75);
+  ${StyledProjectCard}:hover & {
+    visibility: visible;
+    opacity: 100;
+  }
+`
+
+const StyledCardContent = styled.div`
   position: absolute;
   bottom: 0;
-  transition: all 0.3s;
   visibility: hidden;
   opacity: 0;
+  margin: 2em;
+  :before {
+    content:
+  }
   ${StyledProjectCard}:hover & {
     visibility: visible;
     opacity: 100;
@@ -40,13 +62,15 @@ const Content = styled.div`
 `
 
 const ProjectCard = (props) => (
-  <StyledProjectCard {...props}>
-    <Link to={props.path}>
-        <Content>
+  <Link to={props.path} style={{width: '50%'}}>
+    <StyledProjectCard {...props}>
+      <StyledCardCover>
+        <StyledCardContent>
           {props.children}
-        </Content>
-    </Link>
-  </StyledProjectCard>
+        </StyledCardContent>
+      </StyledCardCover>
+    </StyledProjectCard>
+  </Link>
 )
 
 const IndexPage = () => (
@@ -55,11 +79,27 @@ const IndexPage = () => (
       <Intro>experience designer and developer</Intro>
       <ProjectCard path="/roar/" thumbnail={thumbnailRoar}>
         <h2>ROAR</h2>
-        <p>A web app that allows Vancouver Coastal Health to more easily manage new hires and their staff orientation sessions.</p>
+        <p>web app that allows the health authority to more easily manage new hires and their staff orientation sessions</p>
       </ProjectCard>
       <ProjectCard path="/winebox/" thumbnail={thumbnailWinebox}>
         <h2>Winebox</h2>
-        <p>A really nice way to organize wine.</p>
+        <p>multi-platform application that elegantly assists in keeping track of a personal wine collection</p>
+      </ProjectCard>
+      <ProjectCard path="/privileged/" thumbnail={thumbnailPrivileged}>
+        <h2>privileged.tech</h2>
+        <p>a digital implementation of a privilege walk, aimed at reconciling privilege in the technology field</p>
+      </ProjectCard>
+      <ProjectCard path="/signal/" thumbnail={thumbnailSignal}>
+        <h2>Signal — Quick Compose</h2>
+        <p>redesign of message composition in Signal to reduce confusion and frustration</p>
+      </ProjectCard>
+      <ProjectCard path="/skype/" thumbnail={thumbnailSkype}>
+        <h2>Skype — Usability Evaluation</h2>
+        <p>usability evaluation of Skype, identifying issues and making recommendations</p>
+      </ProjectCard>
+      <ProjectCard path="/slack/" thumbnail={thumbnailSlack}>
+        <h2>Slack — Usability Evaluation</h2>
+        <p>usability evaluation of Slack, specifically regarding Jakob Nielsen's heuristics</p>
       </ProjectCard>
     </ProjectsContainer>
   </Layout>
