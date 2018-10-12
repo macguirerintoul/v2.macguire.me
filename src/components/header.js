@@ -38,6 +38,9 @@ const StyledNav = styled.nav`
     flex-shrink: 0;
     align-items: stretch;
     display: flex;
+    a {
+      font-family: 'TradeGothic LT Extended';
+    }
   }
 `
 

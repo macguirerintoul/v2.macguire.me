@@ -2,7 +2,6 @@ module.exports = {
   siteMetadata: {
     title: 'Macguire Rintoul — Portfolio',
   },
-  pathPrefix: '/portfolio',
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',

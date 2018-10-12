@@ -32,6 +32,9 @@ const StyledProjectCard = styled.div`
   min-height: 20em;
   width: 100%;
   color: #FFF;
+  h2 {
+    font-family: 'TradeGothic LT Bold Extended';
+  }
   & * {
     transition: all 0.25s;
   }

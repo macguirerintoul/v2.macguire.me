@@ -1,6 +1,37 @@
 @import '../../node_modules/bulma/css/bulma.min.css';
 
 @font-face {
+    font-family: 'TradeGothic LT Bold Extended';
+    src: url('../fonts/TradeGothicLT-BoldExtended.woff2') format('woff2'),
+        url('../fonts/TradeGothicLT-BoldExtended.woff') format('woff'),
+        url('../fonts/TradeGothicLT-BoldExtended.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TradeGothic LT';
+    src: url('../fonts/TradeGothicLT.woff2') format('woff2'),
+        url('../fonts/TradeGothicLT.woff') format('woff'),
+        url('../fonts/TradeGothicLT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TradeGothic LT Extended';
+    src: url('../fonts/TradeGothicLT-Extended.woff2') format('woff2'),
+        url('../fonts/TradeGothicLT-Extended.woff') format('woff'),
+        url('../fonts/TradeGothicLT-Extended.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+@font-face {
     font-family: 'Anderson Grotesk Oblique';
     src: url('../fonts/AndersonGroteskOblique.woff2') format('woff2'),
         url('../fonts/AndersonGroteskOblique.woff') format('woff'),
@@ -100,7 +131,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Anderson Grotesk Black';
+  font-family: 'TradeGothic LT Extended';
 }
 
 p {

@@ -90,9 +90,7 @@ const Content = styled.div`
   }
 
   & ul {
-    list-style: disc outside;
-    margin-left: 2em;
-    margin-top: 1em;
+    list-style-type: square;
   }
 
   & ul ul {
