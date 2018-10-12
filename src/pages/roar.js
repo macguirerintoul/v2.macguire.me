@@ -4,8 +4,10 @@ import Layout from '../components/layout'
 import Project from '../components/Project'
 import Figure from '../components/Figure'
 import ProjectInformation from '../components/ProjectInformation'
+import Showcase from '../components/Showcase'
 
 import roarRegistrationTop from '../images/roar-registration-top.png'
+import roarDashboard from '../images/roar-dashboard.png'
 
 const ROAR = () => (
   <Layout>
@@ -19,6 +21,18 @@ const ROAR = () => (
       <p>Vancouver Coastal Health is responsible for the training of over 15 thousand healthcare staff and volunteers. The process of registering a newly-hired employee into their mandatory training sessions used to involve numerous back-and-forth emails, PDF forms, manual spreadsheet data entry, and hand-editing a Word template to produce each employee’s training schedule.</p>
       <h2 className='title is-2'>Solution</h2>
       <p>In order to modernize the workflow, we worked alongside the Clinical Education and Recruitment Services teams to design and develop a web app to generate each employee’s schedule and manage education sessions.</p>
+      <Showcase mediaPosition='left' src={roarRegistrationTop} alt='The Registration screen of ROAR'>
+        <p>To register a new hire for training, a recruitment associate fills out the registration form (that used to be a PDF)</p>
+      </Showcase>
+      <Showcase mediaPosition='right' src={roarDashboard} alt='The Dashboard screen of ROAR'>
+        <p>The Dashboard displays registrations that have been submitted along with their status</p>
+      </Showcase>
+      <Showcase mediaPosition='left' src={roarDashboard} alt='The Sessions screen of ROAR'>
+        <p>As future training sessions are scheduled, they can be added to ROAR from the Sessions page and will display as options for registration</p>
+      </Showcase>
+      <Showcase mediaPosition='right' src={roarDashboard} alt='The Schedule page of ROAR'>
+        <p>The employee's schedule is generated based on the registration form, and can be reviewed in-browser</p>
+      </Showcase>
       <h2 className='title is-2'>Approach</h2>
       <p>Clinical Education staff initially approached our team asking how the amount of manual labour involved in the registration process could be reduced. After evaluating the workflow from end to end, we confirmed that much of the work that people were doing could be accomplished using relatively simple technologies. This led us to an initial goal:</p>
       <blockquote>leverage computing power to save CEAs hours every week that they could spend contributing to bigger-picture projects or handling their various other duties.</blockquote>
