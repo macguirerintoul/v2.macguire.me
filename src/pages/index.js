@@ -86,9 +86,9 @@ const IndexPage = () => (
         <h2>ROAR</h2>
         <p>web app enabling Vancouver Coastal Health to more easily manage new hires and their staff orientation sessions</p>
       </ProjectCard>
-      <ProjectCard path="/winebox/" thumbnail={thumbnailWinebox}>
-        <h2>Winebox</h2>
-        <p>multi-platform application that elegantly assists in keeping track of a personal wine collection</p>
+      <ProjectCard path="/vind/" thumbnail={thumbnailWinebox}>
+        <h2>Vind</h2>
+        <p>iPad application that elegantly assists in keeping track of a personal wine collection</p>
       </ProjectCard>
       <ProjectCard path="/sfucode/" thumbnail={thumbnailSFUCode}>
         <h2>SFU Code</h2>
@@ -101,10 +101,6 @@ const IndexPage = () => (
       <ProjectCard path="/signal/" thumbnail={thumbnailSignal}>
         <h2>Signal — Quick Compose</h2>
         <p>redesign of message composition in Signal to reduce confusion and frustration</p>
-      </ProjectCard>
-      <ProjectCard path="/skype/" thumbnail={thumbnailSkype}>
-        <h2>Skype — Usability Evaluation</h2>
-        <p>usability evaluation of Skype, identifying issues and making recommendations</p>
       </ProjectCard>
       <ProjectCard path="/slack/" thumbnail={thumbnailSlack}>
         <h2>Slack — Usability Evaluation</h2>

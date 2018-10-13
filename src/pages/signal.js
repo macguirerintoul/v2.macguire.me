@@ -10,6 +10,7 @@ const Signal = () => (
   <Layout>
     <Project>
       <h1>Signal — Quick Compose</h1>
+      <p>coming soon</p>
     </Project>
   </Layout>
 )

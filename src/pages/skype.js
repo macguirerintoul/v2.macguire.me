@@ -10,7 +10,7 @@ const Skype = () => (
   <Layout>
     <Project>
       <h1>Skype — Usability Evaluation</h1>
-      <p>usability evaluation of Skype</p>
+      <p>coming soon</p>
     </Project>
   </Layout>
 )

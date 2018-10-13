@@ -6,13 +6,13 @@ import Figure from '../components/Figure'
 import ProjectInformation from '../components/ProjectInformation'
 import Showcase from '../components/Showcase'
 
-const About = () => (
+const sfucode = () => (
   <Layout>
     <Project>
-      <h1>Yours Truly</h1>
+      <h1>SFU Code</h1>
       <p>coming soon</p>
     </Project>
   </Layout>
 )
 
-export default About
+export default sfucode

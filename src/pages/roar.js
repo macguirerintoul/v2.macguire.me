@@ -52,9 +52,9 @@ const ROAR = () => (
       <h2 className='title is-2'>Implementation</h2>
       <p>We used Laravel and React to create a system that was available over the Internet to anyone that needed to submit a registration, and to CEAs no matter the location. We also used the Ant Design UI library to achieve a product that was visually similar to the mockups without spending too much time creating custom components.</p>
       <h2 className='title is-2'>Outcomes</h2>
-      <p>According to CEAs, they process around four thousand new employee registrations per year. It takes an estimated [time amount] total for a CEA to manually copy the data, create the employee’s schedule, register the employee for the physical session on a different system, and notify the employee. Based on this, we conclude that ROAR saves [total time] of CEA time per year.</p>
+      <p>coming soon</p>
       <h2 className='title is-2'>Reflections</h2>
-      <p>Although the project brought great improvements to the workflow and the employee experience for CEAs and recruitment staff, more of an impact could have been made if an experience design approach was applied. (continued soon)</p>
+      <p>coming soon</p>
     </Project>
   </Layout>
 )
