@@ -3,13 +3,12 @@ import styled from 'styled-components'
 
 const StyledProjectInformation = styled.div`
   display: flex;
+  font-size: 1em;
 `
 
 const StyledInformationCategory = styled.div`
   flex-grow: 1;
-  & p, & li {
-    font-size: 1.2em;
-  }
+  font-size: 0.8em;
 `
 
 function ProjectInformation(props) {
@@ -17,7 +16,7 @@ function ProjectInformation(props) {
     <StyledProjectInformation>
       <StyledInformationCategory>
         <h3>Context</h3>
-        <p>{props.client}</p>
+        <p>{props.context}</p>
       </StyledInformationCategory>
       <StyledInformationCategory>
         <h3>Roles</h3>

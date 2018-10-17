@@ -3,25 +3,30 @@ import styled from 'styled-components'
 
 const StyledShowcase = styled.div`
   display: flex;
+  flex-direction: ${props => props.horizontal ? 'row' : 'column'};
+  text-align: ${props => props.horizontal ? 'left' : 'center'};
+  div:not(:first-child) {
+    margin: ${props => props.horizontal ? '0 1em' : '1em 0'};
+  }
   align-items: center;
-  margin: 5em 0;
+  margin: 2em 0;
 `
 
 function Showcase(props) {
   let left, right;
-  if (props.mediaPosition == 'left') {
-    left = <img src={props.src} alt={props.alt}/>;
-    right = props.children;
-  } else {
+  if (props.mediaPosition == 'right') {
     left = props.children;
     right = <img src={props.src} alt={props.alt}/>;
+  } else {
+    left = <img src={props.src} alt={props.alt}/>;
+    right = props.children;
   }
   return(
-    <StyledShowcase>
+    <StyledShowcase {...props}>
       <div>
         {left}
       </div>
-      <div style={{'margin-left': '3em'}}>
+      <div>
         {right}
       </div>
     </StyledShowcase>

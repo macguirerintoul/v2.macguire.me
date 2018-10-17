@@ -1,8 +1,24 @@
 import styled from 'styled-components'
 
 const Content = styled.div`
+  font-size: 1.5em;
+
   & li + li {
     margin-top: 0.25em;
+  }
+
+  & a {
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    transition-duration: 0.1s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+    border-bottom: 1px solid;
+    line-height: 1.1;
+    :hover, :focus, :active {
+      transform: translateY(-0.05em);
+    }
   }
 
   & p:not(:last-child),
@@ -90,7 +106,7 @@ const Content = styled.div`
   }
 
   & ul {
-    list-style-type: square;
+    list-style: none;
   }
 
   & ul ul {

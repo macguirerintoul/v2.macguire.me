@@ -15,15 +15,15 @@ const ROAR = () => (
       <h1 className='title is-1'>ROAR</h1>
       <p>Regional Orientation Automated Registration (ROAR) is a web app that allows Vancouver Coastal Health to more easily manage new hires and their staff orientation sessions.</p>
       <Figure imgSrc={roarRegistrationTop} alt='Screenshot of the Registration page of ROAR' caption='The Registration page of ROAR' />
-      <ProjectInformation client='Vancouver Coastal Health' roles={['Full-Stack Web Development', 'Interface Design']} tools={['React', 'Laravel']} />
+      <ProjectInformation context='Vancouver Coastal Health' roles={['Full-Stack Web Development', 'Interface Design']} tools={['Sketch', 'React', 'Laravel']} />
       <h2 className='title is-2'>Problem</h2>
-      <p>Vancouver Coastal Health is responsible for the training of over 15 thousand healthcare staff and volunteers. The process of registering a newly-hired employee into their mandatory training sessions used to involve numerous back-and-forth emails, PDF forms, manual spreadsheet data entry, and hand-editing a Word template to produce each employee’s training schedule.</p>
+      <p>Vancouver Coastal Health is responsible for the training of over 15 thousand healthcare staff and volunteers. The process of registering a newly-hired employee into their mandatory training sessions used to involve numerous emails, PDF forms, manual data entry, and hand-editing a Word template to produce each employee’s training schedule.</p>
       <h2 className='title is-2'>Solution</h2>
       <p>In order to modernize the workflow, we worked alongside the Clinical Education and Recruitment Services teams to design and develop a web app to generate each employee’s schedule and manage education sessions.</p>
-      <Showcase mediaPosition='left' src={roarRegistrationTop} alt='The Registration screen of ROAR'>
-        <p>To register a new hire for training, a recruitment associate fills out the registration form (that used to be a PDF)</p>
+      <Showcase src={roarRegistrationTop} alt='The Registration screen of ROAR'>
+        <p>To register a new hire for training, a recruitment associate fills out the registration form</p>
       </Showcase>
-      <Showcase mediaPosition='right' src={roarDashboard} alt='The Dashboard screen of ROAR'>
+      <Showcase src={roarDashboard} alt='The Dashboard screen of ROAR'>
         <p>The Dashboard displays registrations that have been submitted along with their status</p>
       </Showcase>
       <Showcase mediaPosition='left' src={roarDashboard} alt='The Sessions screen of ROAR'>
