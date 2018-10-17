@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const Content = styled.div`
   font-size: 1.5em;
 
-  & li + li {
+  li + li {
     margin-top: 0.25em;
   }
 
@@ -94,7 +94,7 @@ const Content = styled.div`
     margin-bottom: 2em;
   }
 
-  & img {
+  img, video {
     border-radius: 0.6em;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   }
@@ -105,8 +105,14 @@ const Content = styled.div`
     margin-top: 1em;
   }
 
-  & ul {
+  ul {
     list-style: none;
+    margin-left: 0;
+    padding-left: 1em;
+    text-indent: -1em;
+    li:before {
+     content: '· ';
+    }
   }
 
   & ul ul {

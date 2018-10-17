@@ -13,21 +13,26 @@ const StyledShowcase = styled.div`
 `
 
 function Showcase(props) {
-  let left, right;
-  if (props.mediaPosition == 'right') {
-    left = props.children;
-    right = <img src={props.src} alt={props.alt}/>;
+  let media, first, second;
+  if (props.type == 'image') {
+    media = <img src={props.src} alt={props.alt}/>;
+  } else if (props.type == 'video') {
+    media = <video src={props.src} title={props.alt} autoPlay muted loop></video>
+  }
+  if (props.mediaPosition == 'after') {
+    first = props.children;
+    second = media;
   } else {
-    left = <img src={props.src} alt={props.alt}/>;
-    right = props.children;
+    first = media;
+    second = props.children;
   }
   return(
     <StyledShowcase {...props}>
       <div>
-        {left}
+        {first}
       </div>
       <div>
-        {right}
+        {second}
       </div>
     </StyledShowcase>
   )
