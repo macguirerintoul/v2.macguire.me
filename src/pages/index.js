@@ -25,9 +25,10 @@ const Intro = styled.h1`
 `
 
 const StyledProjectCard = styled.div`
+  display: inline-block;
+  vertical-align: middle;
   position: relative;
-  background-image: url("${props => props.thumbnail}");
-  background-size: cover;
+
   height: 100%;
   min-height: 20em;
   width: 100%;
@@ -37,6 +38,37 @@ const StyledProjectCard = styled.div`
   }
   & * {
     transition: all 0.25s;
+  }
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  overflow: hidden;
+  :after {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #FFF;
+    height: 4px;
+    transition-property: right;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-out;
+  }
+  :hover:after, :focus:after, :active:after {
+    right: 0;
+  }
+`
+
+const StyledImageBackground = styled.div`
+  width: 100%;
+  height: 100%;
+  background-image: url("${props => props.thumbnail}");
+  background-size: cover;
+  background-position: center;
+	transition: all 0.25s ease;
+  :hover {
+    transform: scale(1.02);
   }
 `
 
@@ -69,11 +101,13 @@ const StyledCardContent = styled.div`
 const ProjectCard = (props) => (
   <Link to={props.path} style={{width: '50%'}}>
     <StyledProjectCard {...props}>
-      <StyledCardCover>
-        <StyledCardContent>
-          {props.children}
-        </StyledCardContent>
-      </StyledCardCover>
+      <StyledImageBackground thumbnail={props.thumbnail}>
+        <StyledCardCover>
+          <StyledCardContent>
+            {props.children}
+          </StyledCardContent>
+        </StyledCardCover>
+      </StyledImageBackground>
     </StyledProjectCard>
   </Link>
 )

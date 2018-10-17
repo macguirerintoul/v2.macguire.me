@@ -13,7 +13,6 @@ const ROAR = () => (
   <Layout>
     <Project>
       <h1 className='title is-1'>ROAR</h1>
-      <h2 className='title is-2'>Intro</h2>
       <p>Regional Orientation Automated Registration (ROAR) is a web app that allows Vancouver Coastal Health to more easily manage new hires and their staff orientation sessions.</p>
       <Figure imgSrc={roarRegistrationTop} alt='Screenshot of the Registration page of ROAR' caption='The Registration page of ROAR' />
       <ProjectInformation client='Vancouver Coastal Health' roles={['Full-Stack Web Development', 'Interface Design']} tools={['React', 'Laravel']} />
