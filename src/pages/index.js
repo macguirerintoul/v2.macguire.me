@@ -17,11 +17,11 @@ const ProjectsContainer = styled.div`
 `
 
 const Intro = styled.h1`
-  font-size: 3.5em;
+  font-size: 4.3em;
   line-height: 1.2em;
+  padding-right: 2em;
   width: 50%;
-  color: #0030FF;
-  text-shadow: 2px 2px #FF0000;
+  text-shadow: 3px 3px #D60C1A;
 `
 
 const StyledProjectCard = styled.div`
@@ -34,7 +34,11 @@ const StyledProjectCard = styled.div`
   width: 100%;
   color: #FFF;
   h2 {
-    font-family: 'TradeGothic LT Bold Extended';
+    font-size: 2em;
+    color: #FFF;
+  }
+  p {
+    font-size: 1.3em;
   }
   & * {
     transition: all 0.25s;
@@ -120,9 +124,9 @@ const IndexPage = () => (
         <h2>ROAR</h2>
         <p>web app enabling Vancouver Coastal Health to more easily manage new hires and their staff orientation sessions</p>
       </ProjectCard>
-      <ProjectCard path="/vind/" thumbnail={thumbnailWinebox}>
-        <h2>Vind</h2>
-        <p>iPad application that elegantly assists in keeping track of a personal wine collection</p>
+      <ProjectCard path="/winebox/" thumbnail={thumbnailWinebox}>
+        <h2>Winebox</h2>
+        <p>iPad app that elegantly assists in keeping track of a personal wine collection</p>
       </ProjectCard>
       <ProjectCard path="/sfucode/" thumbnail={thumbnailSFUCode}>
         <h2>SFU Code</h2>

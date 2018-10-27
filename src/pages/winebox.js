@@ -8,12 +8,12 @@ import Showcase from '../components/Showcase'
 
 import wineboxHero from '../images/thumbnail-winebox.png'
 
-const Vind = () => (
+const Winebox = () => (
   <Layout>
     <Project>
-      <h1>Vind</h1>
-      <p>Vind is an iPad application that elegantly assists in keeping track of a personal wine collection.</p>
-      <Figure imgSrc={wineboxHero} alt='The Collection screen of Vind' caption='The Collection screen of Vind' />
+      <h1>Winebox</h1>
+      <p>Winebox is an iPad application that elegantly assists in keeping track of a personal wine collection.</p>
+      <Figure imgSrc={wineboxHero} alt='The Collection screen of Winebox' caption='The Collection screen of Winebox' />
       <ProjectInformation client='Academic Project' roles={['Interface Design', 'Interaction Design']} tools={['Sketch', 'Flinto']} />
       <h2>Problem</h2>
       <p>The initial ideas for the product began from the observation that casual wine collectors were often forgetting the details of their wines. Being designers, we investigated the wide range of people at the various stages of wine enthusiasm. In our speculation and research, we found that this forgotten information could benefit wine collectors of all levels.</p>
@@ -37,4 +37,4 @@ const Vind = () => (
   </Layout>
 )
 
-export default Vind
+export default Winebox

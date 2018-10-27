@@ -121,6 +121,60 @@
   font-style: normal;
 }
 
+@font-face{
+	font-family: 'colfaxThin';
+	src: url('../fonts/colfaxThin.eot');
+	src: url('../fonts/colfaxThin.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/colfaxThin.woff') format('woff'),
+	     url('../fonts/colfaxThin.ttf') format('truetype'),
+	     url('../fonts/colfaxThin.svg#webfont') format('svg');
+}
+
+@font-face{
+	font-family: 'colfaxLight';
+	src: url('../fonts/colfaxLight.eot');
+	src: url('../fonts/colfaxLight.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/colfaxLight.woff') format('woff'),
+	     url('../fonts/colfaxLight.ttf') format('truetype'),
+	     url('../fonts/colfaxLight.svg#webfont') format('svg');
+}
+
+@font-face{
+	font-family: 'colfaxRegular';
+	src: url('../fonts/colfaxRegular.eot');
+	src: url('../fonts/colfaxRegular.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/colfaxRegular.woff') format('woff'),
+	     url('../fonts/colfaxRegular.ttf') format('truetype'),
+	     url('../fonts/colfaxRegular.svg#webfont') format('svg');
+}
+
+@font-face{
+	font-family: 'colfaxRegularItalic';
+	src: url('../fonts/colfaxRegularItalic.eot');
+	src: url('../fonts/colfaxRegularItalic.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/colfaxRegularItalic.woff') format('woff'),
+	     url('../fonts/colfaxRegularItalic.ttf') format('truetype'),
+	     url('../fonts/colfaxRegularItalic.svg#webfont') format('svg');
+}
+
+@font-face{
+	font-family: 'colfaxMedium';
+	src: url('../fonts/colfaxMedium.eot');
+	src: url('../fonts/colfaxMedium.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/colfaxMedium.woff') format('woff'),
+	     url('../fonts/colfaxMedium.ttf') format('truetype'),
+	     url('../fonts/colfaxMedium.svg#webfont') format('svg');
+}
+
+@font-face{
+	font-family: 'colfaxBold';
+	src: url('../fonts/colfaxBold.eot');
+	src: url('../fonts/colfaxBold.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/colfaxBold.woff') format('woff'),
+	     url('../fonts/colfaxBold.ttf') format('truetype'),
+	     url('../fonts/colfaxBold.svg#webfont') format('svg');
+}
+
 body {
   font-family: 'Benton Sans Light';
 }
@@ -131,5 +185,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'TradeGothic LT Extended';
+  font-family: 'colfaxBold';
+  color: #0024D4;
+  text-shadow: 1px 1px #D60C1A;
+}
+
+h1 {
+  font-size: 4.3em;
 }

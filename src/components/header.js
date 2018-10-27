@@ -22,11 +22,15 @@ const StyledNav = styled.nav`
   right: 0;
   z-index: 30;
   background: rgba(255,255,255,0.75);
+  h1 {
+    text-shadow: none;
+  }
   .container {
     align-items: stretch;
     display: flex;
     min-height: 5em;
     width: 100%;
+
   }
   .navbar-brand {
     align-items: center;
@@ -39,6 +43,7 @@ const StyledNav = styled.nav`
     align-items: stretch;
     display: flex;
     a {
+
       font-family: 'TradeGothic LT Extended';
     }
   }
