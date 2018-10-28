@@ -37,7 +37,8 @@ const Content = styled.div`
   & h4,
   & h5,
   & h6 {
-    color: #363636;
+    color: #000;
+    text-shadow: none;
     font-weight: 600;
     line-height: 1.125;
   }
@@ -111,7 +112,7 @@ const Content = styled.div`
     padding-left: 1em;
     text-indent: -1em;
     li:before {
-     content: '· ';
+     content: '— ';
     }
   }
 

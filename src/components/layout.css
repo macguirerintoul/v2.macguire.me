@@ -1,118 +1,6 @@
 @import '../../node_modules/bulma/css/bulma.min.css';
 
 @font-face {
-    font-family: 'TradeGothic LT Bold Extended';
-    src: url('../fonts/TradeGothicLT-BoldExtended.woff2') format('woff2'),
-        url('../fonts/TradeGothicLT-BoldExtended.woff') format('woff'),
-        url('../fonts/TradeGothicLT-BoldExtended.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'TradeGothic LT';
-    src: url('../fonts/TradeGothicLT.woff2') format('woff2'),
-        url('../fonts/TradeGothicLT.woff') format('woff'),
-        url('../fonts/TradeGothicLT.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'TradeGothic LT Extended';
-    src: url('../fonts/TradeGothicLT-Extended.woff2') format('woff2'),
-        url('../fonts/TradeGothicLT-Extended.woff') format('woff'),
-        url('../fonts/TradeGothicLT-Extended.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-
-
-
-@font-face {
-    font-family: 'Anderson Grotesk Oblique';
-    src: url('../fonts/AndersonGroteskOblique.woff2') format('woff2'),
-        url('../fonts/AndersonGroteskOblique.woff') format('woff'),
-        url('../fonts/AndersonGroteskOblique.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Anderson Grotesk Light Oblique';
-    src: url('../fonts/AndersonGroteskLightOblique.woff2') format('woff2'),
-        url('../fonts/AndersonGroteskLightOblique.woff') format('woff'),
-        url('../fonts/AndersonGroteskLightOblique.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Anderson Grotesk Bold';
-    src: url('../fonts/AndersonGroteskBold.woff2') format('woff2'),
-        url('../fonts/AndersonGroteskBold.woff') format('woff'),
-        url('../fonts/AndersonGroteskBold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Anderson Grotesk Ultra Bold Oblique';
-    src: url('../fonts/AndersonGroteskUltraOblique.woff2') format('woff2'),
-        url('../fonts/AndersonGroteskUltraOblique.woff') format('woff'),
-        url('../fonts/AndersonGroteskUltraOblique.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Anderson Grotesk Ultra Bold';
-    src: url('../fonts/AndersonGroteskUltrabold.woff2') format('woff2'),
-        url('../fonts/AndersonGroteskUltrabold.woff') format('woff'),
-        url('../fonts/AndersonGroteskUltrabold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Anderson Grotesk Light';
-    src: url('../fonts/AndersonGroteskLight.woff2') format('woff2'),
-        url('../fonts/AndersonGroteskLight.woff') format('woff'),
-        url('../fonts/AndersonGroteskLight.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Anderson Grotesk Black';
-    src: url('../fonts/AndersonGroteskBlack.woff2') format('woff2'),
-        url('../fonts/AndersonGroteskBlack.woff') format('woff'),
-        url('../fonts/AndersonGroteskBlack.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Anderson Grotesk Bold Oblique';
-    src: url('../fonts/AndersonGroteskBoldOblique.woff2') format('woff2'),
-        url('../fonts/AndersonGroteskBoldOblique.woff') format('woff'),
-        url('../fonts/AndersonGroteskBoldOblique.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Anderson Grotesk';
-    src: url('../fonts/AndersonGroteskRegular.woff2') format('woff2'),
-        url('../fonts/AndersonGroteskRegular.woff') format('woff'),
-        url('../fonts/AndersonGroteskRegular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
   font-family: 'Benton Sans Light';
   src: url('../fonts/BentonSans-Light.woff2') format('woff2'),
        url('../fonts/BentonSans-Light.woff') format('woff'),
@@ -184,10 +72,12 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.title {
   font-family: 'colfaxBold';
   color: #0024D4;
-  text-shadow: 1px 1px #D60C1A;
+  text-shadow: 2px 2px #D60C1A;
+  letter-spacing: -0.02em;
 }
 
 h1 {

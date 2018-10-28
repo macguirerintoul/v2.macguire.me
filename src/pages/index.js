@@ -36,6 +36,7 @@ const StyledProjectCard = styled.div`
   h2 {
     font-size: 2em;
     color: #FFF;
+    text-shadow: 2px 2px #D60C1A;
   }
   p {
     font-size: 1.3em;

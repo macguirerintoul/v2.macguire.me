@@ -4,6 +4,7 @@ import styled from 'styled-components'
 const StyledProjectInformation = styled.div`
   display: flex;
   font-size: 1em;
+  margin-bottom: 2em;
 `
 
 const StyledInformationCategory = styled.div`
