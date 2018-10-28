@@ -96,7 +96,7 @@ const Content = styled.div`
   }
 
   img, video {
-    border-radius: 0.6em;
+    border-radius: 0.2em;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   }
 

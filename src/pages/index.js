@@ -3,8 +3,8 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 import Layout from '../components/layout'
-import thumbnailRoar from '../images/thumbnail-roar.png'
-import thumbnailWinebox from '../images/thumbnail-winebox.png'
+import thumbnailRoar from '../images/thumbnail-roar.jpg'
+import thumbnailWinebox from '../images/thumbnail-winebox.jpg'
 import thumbnailSFUCode from '../images/thumbnail-sfu-code.png'
 import thumbnailPrivileged from '../images/thumbnail-privileged.png'
 import thumbnailSignal from '../images/thumbnail-signal.jpg'
@@ -17,7 +17,7 @@ const ProjectsContainer = styled.div`
 `
 
 const Intro = styled.h1`
-text-align: center;
+  text-align: center;
   font-size: 4.3em;
   line-height: 1.2em;
   margin: 2em;

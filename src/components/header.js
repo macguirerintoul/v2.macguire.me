@@ -44,7 +44,7 @@ const StyledNav = styled.nav`
     display: flex;
     a {
 
-      font-family: 'TradeGothic LT Extended';
+      font-family: 'colfaxRegular';
     }
   }
 `
