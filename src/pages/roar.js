@@ -19,7 +19,7 @@ const ROAR = () => (
       <Showcase type='video' src={dashboardScheduleVideo} alt='Viewing registrations and a schedule'>
         <p>Viewing registrations and a schedule</p>
       </Showcase>
-      <ProjectInformation context='Vancouver Coastal Health' roles={['Full-Stack Web Development', 'Interface Design']} tools={['Sketch', 'React', 'Laravel']} />
+      <ProjectInformation client='Vancouver Coastal Health' roles={['Full-Stack Web Development', 'Interface Design']} tools={['Sketch', 'React', 'Laravel']} />
       <h2 className='title is-2'>Problem</h2>
       <p>Vancouver Coastal Health is responsible for the training of over 15 thousand healthcare staff and volunteers. The process of registering a newly-hired employee into their mandatory training sessions used to involve numerous emails, PDF forms, manual data entry, and hand-editing a Word template to produce each employee’s training schedule.</p>
       <h2 className='title is-2'>Solution</h2>

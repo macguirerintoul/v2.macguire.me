@@ -6,7 +6,10 @@ const StyledShowcase = styled.div`
   flex-direction: ${props => props.horizontal ? 'row' : 'column'};
   text-align: ${props => props.horizontal ? 'left' : 'center'};
   div:not(:first-child) {
-    margin: ${props => props.horizontal ? '0 1em' : '1em 0'};
+    margin: ${props => props.horizontal ? '0 2em' : '1em 0'};
+  }
+  img, video {
+    max-height: 80vh;
   }
   align-items: center;
   margin: 2em 0;

@@ -17,10 +17,10 @@ const ProjectsContainer = styled.div`
 `
 
 const Intro = styled.h1`
+text-align: center;
   font-size: 4.3em;
   line-height: 1.2em;
-  padding-right: 2em;
-  width: 50%;
+  margin: 2em;
   text-shadow: 3px 3px #D60C1A;
 `
 
@@ -118,8 +118,9 @@ const ProjectCard = (props) => (
 
 const IndexPage = () => (
   <Layout>
+    <Intro>experience designer + developer</Intro>
     <ProjectsContainer>
-      <Intro>experience designer and developer</Intro>
+
       <ProjectCard path="/roar/" thumbnail={thumbnailRoar}>
         <h2>ROAR</h2>
         <p>web app enabling Vancouver Coastal Health to more easily manage new hires and their staff orientation sessions</p>
