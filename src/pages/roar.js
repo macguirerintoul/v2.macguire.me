@@ -18,7 +18,7 @@ const ROAR = () => (
 
       <p>Regional Orientation Automated Registration (ROAR) is a web app that allows Vancouver Coastal Health to more easily manage new hires and their staff orientation sessions.</p>
 
-      <ProjectInformation client='Vancouver Coastal Health' roles={['Full-Stack Web Development', 'Interface Design']} tools={['Sketch', 'React', 'Laravel']} />
+      <ProjectInformation client='Vancouver Coastal Health' roles={['Interface Design', 'Full-Stack Web Development']} tools={['Sketch', 'React', 'Laravel']} />
 
       <Showcase type='video' src={dashboardScheduleVideo} alt='Viewing registrations and a schedule'>
         <p>Viewing registrations and a schedule</p>

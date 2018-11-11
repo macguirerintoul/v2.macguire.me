@@ -2,6 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 
 const StyledShowcase = styled.div`
+  div:first-child {
+    min-width: 50%;
+  }
   display: flex;
   flex-direction: ${props => props.horizontal ? 'row' : 'column'};
   text-align: ${props => props.horizontal ? 'left' : 'center'};
