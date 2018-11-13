@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import Layout from '../components/layout'
 import thumbnailRoar from '../images/thumbnail-roar.jpg'
 import thumbnailWinebox from '../images/thumbnail-winebox.jpg'
+import thumbnailLeadRx from '../images/thumbnail-leadrx.jpg'
 import thumbnailSFUCode from '../images/thumbnail-sfu-code.png'
 import thumbnailPrivileged from '../images/thumbnail-privileged.png'
 import thumbnailSignal from '../images/thumbnail-signal.jpg'
@@ -129,6 +130,10 @@ const IndexPage = () => (
       <ProjectCard path="/winebox/" thumbnail={thumbnailWinebox}>
         <h2>Winebox</h2>
         <p>iPad app that elegantly assists in keeping track of a personal wine collection</p>
+      </ProjectCard>
+      <ProjectCard path="/leadrx/" thumbnail={thumbnailLeadRx}>
+        <h2>LeadRx</h2>
+        <p>mobile app that provides professional development content to managers at Vancouver Coastal Health</p>
       </ProjectCard>
       <ProjectCard path="/sfucode/" thumbnail={thumbnailSFUCode}>
         <h2>SFU Code</h2>

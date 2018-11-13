@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const StyledShowcase = styled.div`
-  div:first-child {
+  div {
     min-width: 50%;
   }
   display: flex;

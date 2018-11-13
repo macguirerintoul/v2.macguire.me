@@ -2,7 +2,6 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import Project from '../components/Project'
-import Figure from '../components/Figure'
 import ProjectInformation from '../components/ProjectInformation'
 import Showcase from '../components/Showcase'
 
@@ -25,7 +24,7 @@ const ROAR = () => (
       </Showcase>
 
       <h2 className='title is-2'>Problem</h2>
-      <p>Vancouver Coastal Health is responsible for the training of over 15 thousand healthcare staff and volunteers. The process of registering a newly-hired employee into their mandatory training sessions used to involve numerous emails, PDF forms, manual data entry, and hand-editing a Word template to produce each employee’s training schedule.</p>
+      <p>Vancouver Coastal Health is responsible for the training of over 15 thousand healthcare staff and volunteers. The process of registering a newly-hired employee into their mandatory training sessions involved numerous emails, PDF forms, manual data entry into multiple spreadsheets, and hand-editing a Word template to create each employee’s training schedule.</p>
 
       <h2 className='title is-2'>Solution</h2>
       <p>In order to modernize the workflow, we worked alongside the Clinical Education and Recruitment Services teams to design and develop a web app to generate each employee’s schedule and manage education sessions.</p>
