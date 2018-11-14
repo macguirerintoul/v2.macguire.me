@@ -6,6 +6,7 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
 import Container from './Container'
+import Footer from './footer'
 
 import './layout.css'
 
@@ -41,6 +42,7 @@ const Layout = ({ children }) => (
             {children}
           </Container>
         </LayoutContent>
+        <Footer />
       </>
     )}
   />

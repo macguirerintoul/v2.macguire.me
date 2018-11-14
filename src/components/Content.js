@@ -1,8 +1,24 @@
 import styled from 'styled-components'
 
 const Content = styled.div`
-  & li + li {
+  font-size: 1.5em;
+
+  li + li {
     margin-top: 0.25em;
+  }
+
+  & a {
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    transition-duration: 0.1s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+    border-bottom: 1px solid;
+    line-height: 1.1;
+    :hover, :focus, :active {
+      transform: translateY(-0.05em);
+    }
   }
 
   & p:not(:last-child),
@@ -21,7 +37,8 @@ const Content = styled.div`
   & h4,
   & h5,
   & h6 {
-    color: #363636;
+    color: #000;
+    text-shadow: none;
     font-weight: 600;
     line-height: 1.125;
   }
@@ -78,8 +95,8 @@ const Content = styled.div`
     margin-bottom: 2em;
   }
 
-  & img {
-    border-radius: 0.6em;
+  img, video {
+    border-radius: 0.2em;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   }
 
@@ -89,8 +106,14 @@ const Content = styled.div`
     margin-top: 1em;
   }
 
-  & ul {
-    list-style-type: square;
+  ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1em;
+    text-indent: -1em;
+    li:before {
+     content: '— ';
+    }
   }
 
   & ul ul {
