@@ -143,6 +143,7 @@ const IndexPage = () => (
         <h2>privileged.tech</h2>
         <p>a digital implementation of a privilege walk, aimed at reconciling privilege in the technology field</p>
       </ProjectCard>
+      {/*
       <ProjectCard path="/signal/" thumbnail={thumbnailSignal}>
         <h2>Signal — Quick Compose</h2>
         <p>redesign of message composition in Signal to reduce confusion and frustration</p>
@@ -151,6 +152,7 @@ const IndexPage = () => (
         <h2>Slack — Usability Evaluation</h2>
         <p>usability evaluation of Slack, specifically regarding Jakob Nielsen's heuristics</p>
       </ProjectCard>
+      */}
     </ProjectsContainer>
   </Layout>
 )

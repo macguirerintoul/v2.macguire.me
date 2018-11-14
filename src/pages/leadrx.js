@@ -59,24 +59,24 @@ const LeadRx = () => (
       <p>Although the app already existed, additional user research was conducted to better understand who the app was intended for. An online survey was conducted and a stripped-down user journey was mapped out to emphasize managers' goals and highlight what the app should be able to provide.</p>
 
       <Showcase type='image' src={userJourney} alt='The preliminary user journey for LeadRx'>
-        <caption>the preliminary user journey</caption>
+        <p>the preliminary user journey</p>
       </Showcase>
 
       <p>The essential functionality of the app remained the same, but the interface was revised to be more conformant to native interface patterns and have fewer visual distractions. The typeface Proxima Nova was introduced to follow the VCH brand guidelines, and the brand colours remained from the previous interface.</p>
 
       <Showcase type='image' src={oldUI} alt='the previous iteration of the UI'>
-        <caption>the previous iteration of the UI</caption>
+        <p>the previous iteration of the UI</p>
       </Showcase>
 
       <Showcase type='image' src={newUI} alt='The updated UI'>
-        <caption>the updated UI</caption>
+        <p>the updated UI</p>
       </Showcase>
 
       <h2>Development</h2>
       <p>The existing app was developed with the Ionic framework, but, being new to mobile development at the time, I did not have the skillset to take the existing code and implement changes. LeadRx was rewritten using Adobe Phonegap.</p>
 
       <h2>Outcomes</h2>
-      <p>Due to organizational change, the project was halted and was not released to staff.</p>
+      <p>Due to organizational change, the project was put on hold and was not released to staff.</p>
 
     </Project>
   </Layout>

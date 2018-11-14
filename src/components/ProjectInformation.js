@@ -16,7 +16,7 @@ function ProjectInformation(props) {
   return(
     <StyledProjectInformation>
       <StyledInformationCategory>
-        <h3>Client</h3>
+        <h3>Context</h3>
         <p>{props.client}</p>
       </StyledInformationCategory>
       <StyledInformationCategory>
