@@ -55,13 +55,11 @@ const ROAR = () => (
       <p>Due to the complexity of the project, CEAs and Recruitment Associates provided input every step of the way. This made sure that we were designing something that was similar enough to their existing workflow to be understandable, but also made things more efficient where possible. </p>
 
       <h2 className='title is-2'>Implementation</h2>
-      <p>We used Laravel and React to create a system that was available over the Internet to anyone that needed to submit a registration, and to CEAs no matter the location. We also used the Ant Design UI library to achieve a product that was visually similar to the mockups without spending too much time creating custom components.</p>
+      <p>Laravel and React were used to create a system that was available over the Internet to anyone that needed to submit a registration, and to CEAs no matter the location. The Ant Design UI library was used to create a product that was visually similar to the mockups without spending too much time creating custom components.</p>
 
       <h2 className='title is-2'>Outcomes</h2>
-      <p>coming soon</p>
+      <p>According to Clinical Education, CEAs process roughly 1500 new hires per year at a conservative estimate of half an hour each. That means 750 hours are spent every year creating schedules. Since ROAR automates schedule creation and data management to be practically instantaneous, we eliminate the majority of that time.</p>
 
-      <h2 className='title is-2'>Reflections</h2>
-      <p>coming soon</p>
     </Project>
   </Layout>
 )
