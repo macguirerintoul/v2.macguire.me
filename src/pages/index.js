@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 import Layout from '../components/layout'
+import thumbnailTheSwitch from '../images/thumbnail-the-switch.jpg'
 import thumbnailRoar from '../images/thumbnail-roar.jpg'
 import thumbnailWinebox from '../images/thumbnail-winebox.jpg'
 import thumbnailLeadRx from '../images/thumbnail-leadrx.jpg'
@@ -122,7 +123,10 @@ const IndexPage = () => (
   <Layout>
     <Intro>experience designer + developer</Intro>
     <ProjectsContainer>
-
+      <ProjectCard path="/theswitch/" thumbnail={thumbnailTheSwitch}>
+        <h2>The Switch</h2>
+        <p>address misconceptions and apprehensions to make people feel more comfortable with trying a menstrual cup</p>
+      </ProjectCard>
       <ProjectCard path="/roar/" thumbnail={thumbnailRoar}>
         <h2>ROAR</h2>
         <p>web app enabling Vancouver Coastal Health to more easily manage new hires and their staff orientation sessions</p>
@@ -134,10 +138,6 @@ const IndexPage = () => (
       <ProjectCard path="/leadrx/" thumbnail={thumbnailLeadRx}>
         <h2>LeadRx</h2>
         <p>mobile app that provides professional development content to managers at Vancouver Coastal Health</p>
-      </ProjectCard>
-      <ProjectCard path="/sfucode/" thumbnail={thumbnailSFUCode}>
-        <h2>SFU Code</h2>
-        <p>student club at Simon Fraser University to bring together the student developer community</p>
       </ProjectCard>
       <ProjectCard path="/privileged/" thumbnail={thumbnailPrivileged}>
         <h2>privileged.tech</h2>
