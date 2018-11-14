@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Container from './container'
+import Container from './Container'
 
 const StyledFooter = styled.div`
   display: flex;
