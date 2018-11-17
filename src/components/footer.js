@@ -18,7 +18,7 @@ const Footer = () => (
     <StyledFooter>
 
         <p>&copy; 2018 Macguire Rintoul</p>
-        <p>developed with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and deployed on <a href="https://www.netlify.com/">Netlify</a></p>
+        
 
     </StyledFooter>
   </Container>

@@ -21,7 +21,7 @@ const StyledNav = styled.nav`
   position: fixed;
   right: 0;
   z-index: 30;
-  background: rgba(255,255,255,0.75);
+  background: rgba(255,255,255,0.99);
   h1 {
     text-shadow: none;
   }
