@@ -44,7 +44,7 @@ const About = () => (
       <p>When I'm not doing that, you can catch me <a href="https://www.mixcloud.com/weirdnite/" target="_blank">DJing</a>, <a href="https://soundcloud.com/weirdnite" target="_blank">making my own beats</a>, and <a href="https://www.youtube.com/watch?v=Y6LMuJN_3mU" target="_blank">editing travel videos</a>.</p>
 
       <a href="https://www.linkedin.com/in/mrintoul/" target="_blank">LinkedIn</a> — <a href="https://github.com/mrintoul" target="_blank">GitHub</a> — <a href={resume} target="_blank">Resume</a>
-      <p>macguire.rintoul@gmail.com</p>
+      <p>mrintoul@sfu.ca</p>
       </Project>
   </Layout>
 )
