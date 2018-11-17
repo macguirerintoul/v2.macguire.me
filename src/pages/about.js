@@ -35,7 +35,7 @@ const About = () => (
       <h1>Yours Truly</h1>
       <Showcase horizontal type='image' src={profile} alt="A very nice photo of me">
         <div>
-          <p>Je m'appelle Macguire, and I’m an undergrad at Simon Fraser University in Vancouver, BC. My major is Interactive Arts & Technology; my minor is Computer Science.</p>
+          <p>I'm Macguire, and I’m an undergrad at Simon Fraser University in Vancouver, BC. My major is Interactive Arts & Technology; my minor is Computer Science.</p>
           <History label='current' items={['Systems Analyst at Vancouver Coastal Health']} />
           <History label='previous' items={['Multimedia Designer at Vancouver Coastal Health', 'Digital Designer at CanSleep Services']} />
         </div>
