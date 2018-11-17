@@ -8,6 +8,8 @@ import Header from './header'
 import Container from './Container'
 import Footer from './footer'
 
+import icon32 from '../favicon-32x32.png'
+
 import './layout.css'
 
 const LayoutContent = styled.div`
@@ -32,6 +34,9 @@ const Layout = ({ children }) => (
           meta={[
             { name: 'description', content: 'Sample' },
             { name: 'keywords', content: 'sample, something' },
+          ]}
+          link={[
+            { rel: 'shortcut icon', type: 'image/png', href: `${icon32}`}
           ]}
         >
           <html lang="en" />
