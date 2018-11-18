@@ -124,6 +124,16 @@ const Content = styled.div`
   & ul ul ul {
     list-style-type: square;
   }
+
+  @media only screen and (max-width: 600px) {
+    margin: 0 1em;
+    h1 {
+      font-size: 1em;
+    }
+    p {
+      font-size: 0.8em;
+    }
+  }
 `
 
 export default Content

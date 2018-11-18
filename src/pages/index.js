@@ -24,6 +24,13 @@ const Intro = styled.h1`
   line-height: 1.2em;
   margin: 2em;
   text-shadow: 3px 3px #D60C1A;
+  @media only screen
+  and (max-device-width: 812px) {
+    text-align: center;
+    font-size: 2em;
+    line-height: auto;
+    margin: 1em;
+}
 `
 
 const StyledProjectCard = styled.div`
