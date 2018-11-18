@@ -5,11 +5,18 @@ const StyledProjectInformation = styled.div`
   display: flex;
   font-size: 1em;
   margin: 2em 0;
+  @media screen and (max-width: 600px) {
+    flex-wrap: wrap;
+  }
 `
 
 const StyledInformationCategory = styled.div`
   flex-grow: 1;
   font-size: 0.8em;
+  @media screen and (max-width: 600px) {
+    flex: 0 0 auto;
+    margin-bottom: 1em;
+  }
 `
 
 function ProjectInformation(props) {
@@ -17,7 +24,7 @@ function ProjectInformation(props) {
     <StyledProjectInformation>
       <StyledInformationCategory>
         <h3>Context</h3>
-        <p>{props.client}</p>
+        <span>{props.client}</span>
       </StyledInformationCategory>
       <StyledInformationCategory>
         <h3>Roles</h3>

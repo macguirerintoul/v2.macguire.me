@@ -19,6 +19,13 @@ const StyledShowcase = styled.div`
   }
   align-items: center;
   margin: 2em 0;
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    text-align: center;
+    div:not(:first-child) {
+      margin: 1em 0;
+    }
+  }
 `
 
 function Showcase(props) {

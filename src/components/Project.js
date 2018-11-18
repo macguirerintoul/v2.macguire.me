@@ -12,22 +12,11 @@ const StyledProject = styled.div`
   }
   max-width: 50em;
   margin: auto;
-  /*
-  @media screen and (min-width: 1088px) {
-    max-width: 960px;
-    width: 960px;
+  @media only screen and (max-width: 500px) {
+    h1 {
+      font-size: 2em;
+    }
   }
-
-  @media screen and (min-width: 1280px) {
-    max-width: 1152px;
-    width: 1152px;
-  }
-
-  @media screen and (min-width: 1472px) {
-    max-width: 1344px;
-    width: 1344px;
-  }
-  */
 `
 
 const Project = (props) => (

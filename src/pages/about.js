@@ -33,7 +33,7 @@ const About = () => (
   <Layout>
   <Project>
       <h1>Yours Truly</h1>
-      <Showcase horizontal type='image' src={profile} alt="A very nice photo of me">
+      <Showcase horizontal type='image' src={profile} alt="A very nice photo of me" style={{textAlign: 'left'}}>
         <div>
           <p>I'm Macguire, and I’m an undergrad at Simon Fraser University in Vancouver, BC. My major is Interactive Arts & Technology; my minor is Computer Science.</p>
           <History label='current' items={['Systems Analyst at Vancouver Coastal Health']} />
