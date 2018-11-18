@@ -5,6 +5,9 @@ const StyledShowcase = styled.div`
   div {
     min-width: 50%;
   }
+  p {
+    font-size: 0.8em;
+  }
   display: flex;
   flex-direction: ${props => props.horizontal ? 'row' : 'column'};
   text-align: ${props => props.horizontal ? 'left' : 'center'};
