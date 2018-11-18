@@ -32,8 +32,8 @@ const Layout = ({ children }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: 'description', content: "I'm Macguire, and I am: an experience designer + developer, and an undergrad at Simon Fraser University in Vancouver, BC." },
+            { name: 'keywords', content: 'portfolio, experience, design, designer, developer, siat, sfu' },
           ]}
           link={[
             { rel: 'shortcut icon', type: 'image/png', href: `${icon32}`}
