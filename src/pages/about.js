@@ -13,8 +13,7 @@ const StyledHistory = styled.div`
   font-size: 0.8em;
   margin: 0 0 1em 0 !important;
   label {
-    font-family: 'Colfax';
-    font-weight: 600;
+    font-family: 'colfaxBold';
   }
 `
 
