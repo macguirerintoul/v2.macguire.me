@@ -125,6 +125,10 @@ const Content = styled.div`
     list-style-type: square;
   }
 
+  & label {
+    color: #000;  
+  }
+
   @media only screen and (max-width: 600px) {
     margin: 0 1em;
     h1 {
