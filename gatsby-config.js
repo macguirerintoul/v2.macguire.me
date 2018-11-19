@@ -14,6 +14,13 @@ module.exports = {
       },
     },
     {
+    resolve: `gatsby-plugin-hotjar`,
+    options: {
+      id: 1096151,
+      sv: 6
+    },
+  },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'gatsby-starter-default',
