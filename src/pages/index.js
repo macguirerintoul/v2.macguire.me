@@ -16,6 +16,8 @@ import thumbnailSlack from '../images/thumbnail-slack.png'
 const ProjectsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
+  border-radius: 0.5rem;
+  overflow: hidden;
 `
 
 const Intro = styled.h1`
@@ -36,7 +38,6 @@ const StyledProjectCard = styled.div`
   display: inline-block;
   vertical-align: middle;
   position: relative;
-
   height: 100%;
   min-height: 20em;
   width: 100%;
@@ -63,7 +64,7 @@ const StyledProjectCard = styled.div`
     right: 100%;
     bottom: 0;
     background: #FFF;
-    height: 4px;
+    height: 2px;
     transition-property: right;
     transition-duration: 0.25s;
     transition-timing-function: ease-out;

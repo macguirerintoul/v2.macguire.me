@@ -96,7 +96,7 @@ const Content = styled.div`
   }
 
   img, video {
-    border-radius: 0.2em;
+    border-radius: 0.5rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   }
 
@@ -126,7 +126,7 @@ const Content = styled.div`
   }
 
   & label {
-    color: #000;  
+    color: #000;
   }
 
   @media only screen and (max-width: 600px) {
