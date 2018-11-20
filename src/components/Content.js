@@ -63,7 +63,7 @@ const Content = styled.div`
 
   & h3 {
     font-size: 1.5em;
-    margin-bottom: 0.6666em;
+    margin-bottom: 0.5rem;
   }
 
   & h3:not(:first-child) {
@@ -129,6 +129,10 @@ const Content = styled.div`
     color: #000;
   }
 
+  @media only screen and (max-width: 1024px) {
+    margin: 5rem;
+  }
+
   @media only screen and (max-width: 600px) {
     margin: 0 1em;
     h1 {
@@ -138,6 +142,8 @@ const Content = styled.div`
       font-size: 0.8em;
     }
   }
+
+
 `
 
 export default Content

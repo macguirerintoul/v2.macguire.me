@@ -8,6 +8,9 @@ const StyledHeader = styled.div`
 
 const StyledNav = styled.nav`
   min-height: 5em;
+  @media all and (max-width: 1088px) {
+    box-shadow: rgba(0,0,0,0.1) 0 1px 0.3rem;
+  }
   @media only screen and (max-width: 600px) {
     min-height: 2em;
     padding: 0 1em;

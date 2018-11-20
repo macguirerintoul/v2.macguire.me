@@ -16,8 +16,6 @@ import thumbnailSlack from '../images/thumbnail-slack.png'
 const ProjectsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  border-radius: 0.5rem;
-  overflow: hidden;
 `
 
 const Intro = styled.h1`
@@ -166,11 +164,11 @@ const IndexPage = () => (
     <ProjectsContainer>
       <ProjectCard path="/theswitch/" thumbnail={thumbnailTheSwitch}>
         <h2>The Switch</h2>
-        <p>address misconceptions and apprehensions to make people feel more comfortable with trying a menstrual cup</p>
+        <p>Web app introduction to menstrual cups that aims to address apprehensions and increase customer confidence</p>
       </ProjectCard>
       <ProjectCard path="/roar/" thumbnail={thumbnailRoar}>
         <h2>ROAR</h2>
-        <p>web app enabling Vancouver Coastal Health to more easily manage new hires and their staff orientation sessions</p>
+        <p>Web app that allows Vancouver Coastal Health to more easily manage new hires and their staff orientation sessions</p>
       </ProjectCard>
       <ProjectCard path="/winebox/" thumbnail={thumbnailWinebox}>
         <h2>Winebox</h2>
@@ -178,11 +176,11 @@ const IndexPage = () => (
       </ProjectCard>
       <ProjectCard path="/leadrx/" thumbnail={thumbnailLeadRx}>
         <h2>LeadRx</h2>
-        <p>mobile app that provides professional development content to managers at Vancouver Coastal Health</p>
+        <p>Mobile app that provides professional development content to managers at Vancouver Coastal Health</p>
       </ProjectCard>
       <ProjectCard path="/privileged/" thumbnail={thumbnailPrivileged}>
-        <h2>privileged.tech</h2>
-        <p>a digital implementation of a privilege walk, aimed at reconciling privilege in the technology field</p>
+        <h2>Privileged.tech</h2>
+        <p>Web app implementation of a privilege walk that aims to reconcile privilege in the technology field</p>
       </ProjectCard>
       {/*
       <ProjectCard path="/signal/" thumbnail={thumbnailSignal}>
