@@ -3,6 +3,7 @@ module.exports = {
     title: 'Macguire Rintoul — Portfolio',
   },
   plugins: [
+    'gatsby-plugin-sitemap',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     {

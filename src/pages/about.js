@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import {Helmet} from 'react-helmet'
 
 import Layout from '../components/layout'
 import Project from '../components/Project'
@@ -30,11 +31,15 @@ const History = (props) => (
 
 const About = () => (
   <Layout>
+  <Helmet>
+    <title>About | Macguire Rintoul — Portfolio</title>
+    <link rel="canonical" href="https://mrintoul.com/about" />
+  </Helmet>
   <Project>
       <h1>Yours Truly</h1>
       <Showcase horizontal type='image' src={profile} alt="A very nice photo of me" style={{textAlign: 'left'}}>
         <div>
-          <p>I'm Macguire, and I’m an undergrad at Simon Fraser University in Vancouver, BC. My major is Interactive Arts & Technology; my minor is Computer Science.</p>
+          <p>I'm Macguire, and I’m an undergrad at Simon Fraser University in Vancouver, BC. My major is Interactive Arts & Technology with a concentration in design.</p>
           <History label='current' items={['Systems Analyst at Vancouver Coastal Health']} />
           <History label='previous' items={['Multimedia Designer at Vancouver Coastal Health', 'Digital Designer at CanSleep Services']} />
         </div>
