@@ -24,13 +24,12 @@ const Intro = styled.h1`
   line-height: 1.2em;
   margin: 2em;
   text-shadow: 3px 3px #D60C1A;
-  @media only screen
-  and (max-device-width: 812px) {
+  @media all and (max-width: 812px) {
     text-align: center;
     font-size: 2em;
     line-height: auto;
     margin: 1em;
-}
+  }
 `
 
 const StyledProjectCard = styled.div`
@@ -91,6 +90,14 @@ const StyledCardCover = styled.div`
   height: 100%;
   opacity: 0;
   background-color: rgba(0,0,0,0.75);
+  @media all and (max-width: 812px) {
+    visibility: visible;
+    opacity: 100;
+    background-color: rgba(0,0,0,0.2);
+    p {
+      display: none;
+    }
+  }
   ${StyledProjectCard}:hover & {
     visibility: visible;
     opacity: 100;
@@ -100,11 +107,15 @@ const StyledCardCover = styled.div`
 const StyledCardContent = styled.div`
   position: absolute;
   bottom: 0;
-  visibility: hidden;
-  opacity: 0;
+  /* visibility: hidden;
+  opacity: 0; */
   margin: 2em;
   :before {
     content:
+  }
+  @media all and (max-width: 812px) {
+    visibility: visible;
+    opacity: 100;
   }
   ${StyledProjectCard}:hover & {
     visibility: visible;
@@ -112,18 +123,33 @@ const StyledCardContent = styled.div`
   }
 `
 
+const StyledCardLink = styled.div`
+  width: 50%;
+  @media all and (max-width: 812px) {
+    width: 100%;
+  }
+`
+
+const CardLink = (props) => (
+  <StyledCardLink>
+    {props.children}
+  </StyledCardLink>
+);
+
 const ProjectCard = (props) => (
-  <Link to={props.path} style={{width: '50%'}}>
-    <StyledProjectCard {...props}>
-      <StyledImageBackground thumbnail={props.thumbnail}>
-        <StyledCardCover>
-          <StyledCardContent>
-            {props.children}
-          </StyledCardContent>
-        </StyledCardCover>
-      </StyledImageBackground>
-    </StyledProjectCard>
-  </Link>
+  <StyledCardLink>
+    <Link to={props.path}>
+      <StyledProjectCard {...props}>
+        <StyledImageBackground thumbnail={props.thumbnail}>
+          <StyledCardCover>
+            <StyledCardContent>
+              {props.children}
+            </StyledCardContent>
+          </StyledCardCover>
+        </StyledImageBackground>
+      </StyledProjectCard>
+    </Link>
+  </StyledCardLink>
 )
 
 const IndexPage = () => (
