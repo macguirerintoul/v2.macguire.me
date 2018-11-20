@@ -152,9 +152,16 @@ const ProjectCard = (props) => (
   </StyledCardLink>
 )
 
+const LineBreak = styled.br`
+  display: none;
+  @media all and (min-width: 364px) {
+    display: block;
+  }
+`
+
 const IndexPage = () => (
   <Layout>
-    <Intro>experience designer + developer</Intro>
+    <Intro>experience designer<LineBreak/> + developer</Intro>
     <ProjectsContainer>
       <ProjectCard path="/theswitch/" thumbnail={thumbnailTheSwitch}>
         <h2>The Switch</h2>
