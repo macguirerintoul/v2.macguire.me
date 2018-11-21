@@ -5,7 +5,7 @@ const StyledProjectInformation = styled.div`
   display: flex;
   font-size: 1em;
   margin: 2em 0;
-  @media screen and (max-width: 600px) {
+  @media all and (max-width: 768px) {
     flex-wrap: wrap;
   }
 `
@@ -13,8 +13,8 @@ const StyledProjectInformation = styled.div`
 const StyledInformationCategory = styled.div`
   flex-grow: 1;
   font-size: 0.8em;
-  @media screen and (max-width: 600px) {
-    flex: 0 0 auto;
+  @media all and (max-width: 768px) {
+    width: 100%;
     margin-bottom: 1em;
   }
 `

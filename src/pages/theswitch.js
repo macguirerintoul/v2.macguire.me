@@ -26,7 +26,7 @@ const TheSwitch = () => (
   <Layout>
     <Project>
       <h1>The Switch</h1>
-      <p>An online introduction to menstrual cups that aims to address apprehensions and make people feel more comfortable with trying one. The four-week project is a hypothetical product for <a href='https://lenacup.com/' target='_blank'>Lena</a>, and is not affiliated with the brand.</p>
+      <p>A web app introduction to menstrual cups that aims to address apprehensions and increase customer confidence. The four-week project is a hypothetical product for <a href='https://lenacup.com/' target='_blank'>Lena</a>, and is not affiliated with the brand.</p>
       <ProjectInformation client='Senior Design Course' roles={['Content Strategy', 'Project Management']} tools={['Keynote', 'G Suite']} />
       <Showcase type='video' src={primaryVideo} alt='The primary information presented in The Switch' >
         <p>The Switch has five steps that answer big questions and lessen frictions within the customer journey. Primary content is concise to ease visitors in, with more detailed information available below.</p>
@@ -34,6 +34,8 @@ const TheSwitch = () => (
 
       <h2>Problem</h2>
       <p>Despite the physical, environmental, and financial benefits of menstrual cups, lack of exposure in mainstream media has slowed their normalization. Furthermore, the majority of people that menstruate already use tampons, pads, or liners, and aren’t motivated to take the physical and emotional risk of switching products. While the Lena Cup is <a href="https://www.cosmopolitan.com/sex-love/a13126155/best-menstrual-cups/" target="_blank">recognized</a> as the <a href="https://www.bustle.com/p/the-5-best-menstrual-cups-for-beginners-8797916" target="_blank">#1 cup for beginners</a>, Lena's existing site does not effectively communicate the product's value and benefits.</p>
+
+      <div style={{padding:'56.25% 0 0 0', position:'relative'}}><iframe src="https://player.vimeo.com/video/301757528?title=0&byline=0&portrait=0" style={{position:'absolute',top:0,left:0, width:'100%', height: '100%'}} frameborder="0" webkitallowfullscreen mozallowfullscreen AllowFullScreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
       <h2>Solution</h2>
       <p>The Switch by Lena addresses false assumptions and apprehensions about menstrual cups head-on, to alleviate the concerns people have about trying one.</p>
@@ -49,6 +51,8 @@ const TheSwitch = () => (
       <Showcase type='video' src={secondaryVideo} alt='Secondary information in The Switch' >
         <p>Each step of the onboarding has secondary information associated with it, to answer follow-up questions. To keep the experience authentic, the content was created and organized as if it were coming from a supportive older sister. Improved information design delivers details in a more understandable way.</p>
       </Showcase>
+
+      <div style={{padding:'56.25% 0 0 0', position:'relative'}}><iframe src="https://player.vimeo.com/video/301758677?title=0&byline=0&portrait=0" style={{position:'absolute',top:0,left:0, width:'100%', height: '100%'}} frameborder="0" webkitallowfullscreen mozallowfullscreen AllowFullScreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
       <h2>Process</h2>
       <p>After identifying business problems in the menstrual cup market, we identified frictions with Lena's existing website. Information was distributed across multiple pages, and described the product without effectively explaining how it was better than alternatives. We then conducted a survey to understand peoples' perceptions of cups and suggest how they could be swayed.</p>

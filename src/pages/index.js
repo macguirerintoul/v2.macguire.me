@@ -24,20 +24,18 @@ const Intro = styled.h1`
   line-height: 1.2em;
   margin: 2em;
   text-shadow: 3px 3px #D60C1A;
-  @media only screen
-  and (max-device-width: 812px) {
+  @media all and (max-width: 812px) {
     text-align: center;
     font-size: 2em;
     line-height: auto;
     margin: 1em;
-}
+  }
 `
 
 const StyledProjectCard = styled.div`
   display: inline-block;
   vertical-align: middle;
   position: relative;
-
   height: 100%;
   min-height: 20em;
   width: 100%;
@@ -64,7 +62,7 @@ const StyledProjectCard = styled.div`
     right: 100%;
     bottom: 0;
     background: #FFF;
-    height: 4px;
+    height: 2px;
     transition-property: right;
     transition-duration: 0.25s;
     transition-timing-function: ease-out;
@@ -91,6 +89,14 @@ const StyledCardCover = styled.div`
   height: 100%;
   opacity: 0;
   background-color: rgba(0,0,0,0.75);
+  @media all and (max-width: 812px) {
+    visibility: visible;
+    opacity: 100;
+    background-color: rgba(0,0,0,0.2);
+    p {
+      display: none;
+    }
+  }
   ${StyledProjectCard}:hover & {
     visibility: visible;
     opacity: 100;
@@ -100,11 +106,15 @@ const StyledCardCover = styled.div`
 const StyledCardContent = styled.div`
   position: absolute;
   bottom: 0;
-  visibility: hidden;
-  opacity: 0;
+  /* visibility: hidden;
+  opacity: 0; */
   margin: 2em;
   :before {
     content:
+  }
+  @media all and (max-width: 812px) {
+    visibility: visible;
+    opacity: 100;
   }
   ${StyledProjectCard}:hover & {
     visibility: visible;
@@ -112,31 +122,53 @@ const StyledCardContent = styled.div`
   }
 `
 
+const StyledCardLink = styled.div`
+  width: 50%;
+  @media all and (max-width: 812px) {
+    width: 100%;
+  }
+`
+
+const CardLink = (props) => (
+  <StyledCardLink>
+    {props.children}
+  </StyledCardLink>
+);
+
 const ProjectCard = (props) => (
-  <Link to={props.path} style={{width: '50%'}}>
-    <StyledProjectCard {...props}>
-      <StyledImageBackground thumbnail={props.thumbnail}>
-        <StyledCardCover>
-          <StyledCardContent>
-            {props.children}
-          </StyledCardContent>
-        </StyledCardCover>
-      </StyledImageBackground>
-    </StyledProjectCard>
-  </Link>
+  <StyledCardLink>
+    <Link to={props.path}>
+      <StyledProjectCard {...props}>
+        <StyledImageBackground thumbnail={props.thumbnail}>
+          <StyledCardCover>
+            <StyledCardContent>
+              {props.children}
+            </StyledCardContent>
+          </StyledCardCover>
+        </StyledImageBackground>
+      </StyledProjectCard>
+    </Link>
+  </StyledCardLink>
 )
+
+const LineBreak = styled.br`
+  display: none;
+  @media all and (min-width: 364px) {
+    display: block;
+  }
+`
 
 const IndexPage = () => (
   <Layout>
-    <Intro>experience designer + developer</Intro>
+    <Intro>experience designer<LineBreak/> + developer</Intro>
     <ProjectsContainer>
       <ProjectCard path="/theswitch/" thumbnail={thumbnailTheSwitch}>
         <h2>The Switch</h2>
-        <p>address misconceptions and apprehensions to make people feel more comfortable with trying a menstrual cup</p>
+        <p>Web app introduction to menstrual cups that aims to address apprehensions and increase customer confidence</p>
       </ProjectCard>
       <ProjectCard path="/roar/" thumbnail={thumbnailRoar}>
         <h2>ROAR</h2>
-        <p>web app enabling Vancouver Coastal Health to more easily manage new hires and their staff orientation sessions</p>
+        <p>Web app that allows Vancouver Coastal Health to more easily manage new hires and their staff orientation sessions</p>
       </ProjectCard>
       <ProjectCard path="/winebox/" thumbnail={thumbnailWinebox}>
         <h2>Winebox</h2>
@@ -144,11 +176,11 @@ const IndexPage = () => (
       </ProjectCard>
       <ProjectCard path="/leadrx/" thumbnail={thumbnailLeadRx}>
         <h2>LeadRx</h2>
-        <p>mobile app that provides professional development content to managers at Vancouver Coastal Health</p>
+        <p>Mobile app that provides professional development content to managers at Vancouver Coastal Health</p>
       </ProjectCard>
       <ProjectCard path="/privileged/" thumbnail={thumbnailPrivileged}>
-        <h2>privileged.tech</h2>
-        <p>a digital implementation of a privilege walk, aimed at reconciling privilege in the technology field</p>
+        <h2>Privileged.tech</h2>
+        <p>Web app implementation of a privilege walk that aims to reconcile privilege in the technology field</p>
       </ProjectCard>
       {/*
       <ProjectCard path="/signal/" thumbnail={thumbnailSignal}>
