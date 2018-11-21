@@ -23,7 +23,7 @@ const LeadRx = () => (
       <h1>LeadRx 📲</h1>
       <p>LeadRx is a mobile app that provides professional development content to managers at Vancouver Coastal Health.</p>
 
-      <ProjectInformation client='Vancouver Coastal Health' roles={['Interface Design', 'Mobile Development']} tools={['Adobe XD', 'Adobe PhoneGap', 'Moodle']}/>
+      <ProjectInformation client='during employment at Vancouver Coastal Health' roles={['Interface Design', 'Mobile Development']} tools={['Adobe XD', 'Adobe PhoneGap', 'Moodle']}/>
 
       <Showcase horizontal type='video' src={dashboardVideo} alt='The dashboard screen of LeadRx'>
         <p>Browsing content in LeadRx</p>

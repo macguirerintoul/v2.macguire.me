@@ -21,7 +21,7 @@ const Privileged = () => (
 
       <a href="http://www.privileged.tech/" target="_blank">Live App</a> — <a href="https://github.com/FlyteWizard/privileged" target="_blank">GitHub</a>
 
-      <ProjectInformation client='Hackathon' roles={['Full-Stack Web Development']} tools={['React', 'Firebase', 'Heroku']} />
+      <ProjectInformation client='24-hour hackathon project' roles={['Full-Stack Web Development']} tools={['React', 'Firebase', 'Heroku']} />
 
       <Showcase type='image' src={landing} alt='The landing screen of privileged.tech' >
         <p>The landing screen explains the activity and sets the tone.</p>
