@@ -7,7 +7,6 @@ const StyledHeader = styled.div`
 `
 
 const StyledNav = styled.nav`
-  min-height: 5em;
   @media all and (max-width: 1088px) {
     box-shadow: rgba(0,0,0,0.1) 0 1px 0.3rem;
   }
@@ -26,7 +25,6 @@ const StyledNav = styled.nav`
     text-shadow: none;
   }
   align-items: stretch;
-  min-height: 5em;
   width: 100%;
   .navbar-brand {
     align-items: center;

@@ -27,7 +27,7 @@ const TheSwitch = () => (
     <Project>
       <h1>The Switch</h1>
       <p>A web app introduction to menstrual cups that aims to address apprehensions and increase customer confidence. The four-week project is a hypothetical product for <a href='https://lenacup.com/' target='_blank'>Lena</a>, and is not affiliated with the brand.</p>
-      <ProjectInformation client='Senior Design Course' roles={['Content Strategy', 'Project Management']} tools={['Keynote', 'G Suite']} />
+      <ProjectInformation client='4 week project for a senior design course' roles={['Content Strategy', 'Project Management']} tools={['Keynote', 'G Suite']} />
       <Showcase type='video' src={primaryVideo} alt='The primary information presented in The Switch' >
         <p>The Switch has five steps that answer big questions and lessen frictions within the customer journey. Primary content is concise to ease visitors in, with more detailed information available below.</p>
       </Showcase>
@@ -41,7 +41,7 @@ const TheSwitch = () => (
       <p>The Switch by Lena addresses false assumptions and apprehensions about menstrual cups head-on, to alleviate the concerns people have about trying one.</p>
 
       <Showcase type='video' src={landingVideo} alt='The new landing page' >
-        <p>Leveraging the brand's #1 status and encouraging visitors to engage, The Switch acts as a hero element on Lena's landing page to capture newcomers. Lena's existing home page content remains below.</p>
+        <p>Leveraging the brand's #1 status and encouraging visitors to engage, The Switch acts as a hero element on Lena's landing page to capture newcomers.</p>
       </Showcase>
 
       <Showcase type='video' src={primaryVideo} alt='Primary information in The Switch' >

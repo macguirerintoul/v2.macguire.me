@@ -12,10 +12,12 @@ const StyledProjectInformation = styled.div`
 
 const StyledInformationCategory = styled.div`
   flex-grow: 1;
+  flex-basis: 0;
   font-size: 0.8em;
+  padding-right: 2rem;
   @media all and (max-width: 768px) {
     width: 100%;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
   }
 `
 
