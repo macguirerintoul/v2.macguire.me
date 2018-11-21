@@ -41,7 +41,7 @@ const TheSwitch = () => (
       <p>The Switch by Lena addresses false assumptions and apprehensions about menstrual cups head-on, to alleviate the concerns people have about trying one.</p>
 
       <Showcase type='video' src={landingVideo} alt='The new landing page' >
-        <p>Leveraging the brand's #1 status and encouraging visitors to engage, The Switch acts as a hero element on Lena's landing page to capture newcomers. Lena's existing home page content remains below.</p>
+        <p>Leveraging the brand's #1 status and encouraging visitors to engage, The Switch acts as a hero element on Lena's landing page to capture newcomers.</p>
       </Showcase>
 
       <Showcase type='video' src={primaryVideo} alt='Primary information in The Switch' >
