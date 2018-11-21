@@ -25,7 +25,6 @@ const StyledNav = styled.nav`
     text-shadow: none;
   }
   align-items: stretch;
-  min-height: 5em;
   width: 100%;
   .navbar-brand {
     align-items: center;
