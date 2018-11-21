@@ -13,7 +13,7 @@ import scheduleVideo from '../videos/roar/schedule.mp4'
 const ROAR = () => (
   <Layout>
     <Project>
-      <h1>ROAR 🦁</h1>
+      <h1>ROAR</h1>
 
       <p>Regional Orientation Automated Registration (ROAR) is a web app that allows Vancouver Coastal Health to more easily manage new hires and their staff orientation sessions.</p>
 
