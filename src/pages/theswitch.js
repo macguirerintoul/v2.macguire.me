@@ -57,21 +57,31 @@ const TheSwitch = () => (
       <h2>Process</h2>
       <p>After identifying business problems in the menstrual cup market, we identified frictions with Lena's existing website. Information was distributed across multiple pages, and described the product without effectively explaining how it was better than alternatives. We then conducted a survey to understand peoples' perceptions of cups and suggest how they could be swayed.</p>
 
-      <Showcase type='image' src={productApprehension} alt='Business Problem A: Product Apprehension' />
+      <Showcase type='image' src={productApprehension} alt='Business Problem A: Product Apprehension' >
+        <p>Business Problem A: Product Apprehension.</p>
+      </Showcase>
 
-      <Showcase type='image' src={establishedHabits} alt='Business Problem B: Established Habits' />
+      <Showcase type='image' src={establishedHabits} alt='Business Problem B: Established Habits' >
+        <p>Business Problem B: Established Habits.</p>
+      </Showcase>
 
       <p>While we acknowledged the various opportunities for the project, we focused on addressing apprehensions considering the scope and timeframe.</p>
 
-      <Showcase type='image' src={opportunity} alt='Opportunity for the project' />
+      <Showcase type='image' src={opportunity} alt='Opportunity for the project' >
+        <p>The opportunity: address apprehensions for those who have not used a menstrual cup before.</p>
+      </Showcase>
 
       <p>We then developed personas from common themes in our research. We chose to design for 'Accustomed & Uncertain', someone who uses other menstrual products and doesn't know enough about cups to switch over.</p>
 
-      <Showcase type='image' src={persona} alt='Persona: Accustomed & Uncertain' />
+      <Showcase type='image' src={persona} alt='Persona: Accustomed & Uncertain' >
+        <p>One of the personas derived from our research: accustomed & uncertain.</p>
+      </Showcase>
 
       <p>The Lena customer journey is a bit rocky due to the nature of the product. The struggle of switching is recognized by the majority of cup users, but is said to be well worth it. Considering the business problems, we chose to address the pre-purchase stages and aimed to convey the value of menstrual cups more effectively.</p>
 
-      <Showcase type='image' src={customerJourney} alt='The Lena customer journey' />
+      <Showcase type='image' src={customerJourney} alt='The Lena customer journey' >
+        <p>The customer journey map of someone purchasing a Lena Cup.</p>
+      </Showcase>
 
       <p>For the awareness stage, we considered how customers might find out about The Switch.</p>
       <Showcase horizontal type='video' src={instagramVideo} alt='Entice: Instagram Ads' >
@@ -95,6 +105,9 @@ const TheSwitch = () => (
       <Showcase type='image' src={stories} alt='Extend: Stories' >
         <p>Customers would then work with Lena to have their experience turned into a narrative that could help convince others to try a Lena Cup.</p>
       </Showcase>
+
+      <h2>Reflection</h2>
+      <p>Throughout the project, we may have been too ambitious about the issues we were trying to address. Trying to reduce gender dysphoria with a brand that was fairly feminine was difficult, and reducing the stigma around periods could have been its own project. It was worthwhile to try, but deciding on one opportunity earlier in the project would have allowed more time for iteration and validation.</p>
     </Project>
   </Layout>
 )
