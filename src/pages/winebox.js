@@ -5,6 +5,7 @@ import Project from '../components/Project'
 import Figure from '../components/Figure'
 import ProjectInformation from '../components/ProjectInformation'
 import Showcase from '../components/Showcase'
+import MoreProjects from '../components/MoreProjects'
 
 import wineboxHero from '../images/thumbnail-winebox.jpg'
 import persona from '../images/winebox-persona.png'
@@ -71,6 +72,7 @@ const Winebox = () => (
         <p>The experience map included different contexts of use, although we ultimately ended up designing for use at home.</p>
       </Showcase>
 
+      <MoreProjects projects={['theswitch', 'roar', 'leadrx', 'privileged']}/>
     </Project>
   </Layout>
 )
