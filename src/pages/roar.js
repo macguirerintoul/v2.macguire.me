@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import Project from '../components/Project'
 import ProjectInformation from '../components/ProjectInformation'
 import Showcase from '../components/Showcase'
+import MoreProjects from '../components/MoreProjects'
 
 import dashboardScheduleVideo from '../videos/roar/DashboardSchedule.mp4'
 import registrationVideo from '../videos/roar/Registration.mp4'
@@ -60,6 +61,7 @@ const ROAR = () => (
       <h2 className='title is-2'>Outcomes</h2>
       <p>According to Clinical Education, CEAs process roughly 1500 new hires per year at a conservative estimate of half an hour each. That means 750 hours are spent every year creating schedules. Since ROAR automates schedule creation and data management to be practically instantaneous, we eliminate the majority of that time.</p>
 
+      <MoreProjects projects={['theswitch', 'winebox', 'leadrx', 'privileged']}/>
     </Project>
   </Layout>
 )

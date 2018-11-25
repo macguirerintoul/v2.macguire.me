@@ -5,6 +5,7 @@ import Project from '../components/Project'
 import Figure from '../components/Figure'
 import ProjectInformation from '../components/ProjectInformation'
 import Showcase from '../components/Showcase'
+import MoreProjects from '../components/MoreProjects'
 
 import landing from '../images/privileged-landing.png'
 import enter from '../images/privileged-enter.png'
@@ -53,6 +54,7 @@ const Privileged = () => (
 
       <a href="http://www.privileged.tech/" target="_blank">Live App</a> — <a href="https://github.com/FlyteWizard/privileged" target="_blank">GitHub</a>
 
+      <MoreProjects projects={['theswitch', 'roar', 'winebox', 'leadrx']}/>
     </Project>
   </Layout>
 )

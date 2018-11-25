@@ -5,6 +5,7 @@ import Project from '../components/Project'
 import Figure from '../components/Figure'
 import ProjectInformation from '../components/ProjectInformation'
 import Showcase from '../components/Showcase'
+import MoreProjects from '../components/MoreProjects'
 
 import dashboardVideo from '../videos/leadrx/dashboard.mp4'
 import loginVideo from '../videos/leadrx/login.mp4'
@@ -78,6 +79,7 @@ const LeadRx = () => (
       <h2>Outcomes</h2>
       <p>Due to organizational change, the project was put on hold and was not released to staff.</p>
 
+      <MoreProjects projects={['theswitch', 'roar', 'winebox', 'privileged']}/>
     </Project>
   </Layout>
 )

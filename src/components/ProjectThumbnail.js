@@ -39,7 +39,7 @@ const StyledThumbnailImage = styled.div`
 
 function ProjectThumbnail(props) {
   let thumbnailImage, name;
-  if (props.project == "theSwitch") {
+  if (props.project == "theswitch") {
     thumbnailImage = <StyledThumbnailImage src={theSwitchThumbnail} />;
     name = "The Switch";
   } else if (props.project == "roar") {
