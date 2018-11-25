@@ -19,12 +19,23 @@ const StyledProject = styled.div`
   }
 `
 
-const Project = (props) => (
-  <StyledProject>
-    <Content>
-      {props.children}
-    </Content>
-  </StyledProject>
-)
+class Project extends Component {
+  constructor(props) {
+    super(props);
+  }
+  componentDidMount() {
+    console.log('windowscroll')
+    window.scrollTo(0, 0);
+  }
+  render() {
+    return(
+      <StyledProject>
+        <Content>
+          {this.props.children}
+        </Content>
+      </StyledProject>
+    );
+  }
+}
 
 export default Project

@@ -5,6 +5,7 @@ import Project from '../components/Project'
 import Figure from '../components/Figure'
 import ProjectInformation from '../components/ProjectInformation'
 import Showcase from '../components/Showcase'
+import MoreProjects from '../components/MoreProjects'
 
 import landing from '../images/privileged-landing.png'
 import enter from '../images/privileged-enter.png'
@@ -17,7 +18,7 @@ const Privileged = () => (
   <Layout>
     <Project>
       <h1>Privileged</h1>
-      <p>privileged.tech is a digital implementation of a privilege walk, aimed at reconciling privilege in the technology field. The majority of the project was completed in 24 hours as part of nwHacks 2018, with finishing touches done afterward.</p>
+      <p>Privileged.tech is a digital implementation of a privilege walk, aimed at reconciling privilege in the technology field. The majority of the project was completed in 24 hours as part of nwHacks 2018, with finishing touches done afterward.</p>
 
       <a href="http://www.privileged.tech/" target="_blank">Live App</a> — <a href="https://github.com/FlyteWizard/privileged" target="_blank">GitHub</a>
 
@@ -53,6 +54,7 @@ const Privileged = () => (
 
       <a href="http://www.privileged.tech/" target="_blank">Live App</a> — <a href="https://github.com/FlyteWizard/privileged" target="_blank">GitHub</a>
 
+      <MoreProjects projects={['theswitch', 'roar', 'winebox', 'leadrx']}/>
     </Project>
   </Layout>
 )
