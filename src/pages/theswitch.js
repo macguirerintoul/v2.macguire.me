@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import Project from '../components/Project'
 import ProjectInformation from '../components/ProjectInformation'
 import Showcase from '../components/Showcase'
+import MoreProjects from '../components/MoreProjects'
 
 import primaryVideo from '../videos/the-switch/primary.mp4'
 import landingVideo from '../videos/the-switch/landing.mp4'
@@ -105,9 +106,9 @@ const TheSwitch = () => (
       <Showcase type='image' src={stories} alt='Extend: Stories' >
         <p>Customers would then work with Lena to have their experience turned into a narrative that could help convince others to try a Lena Cup.</p>
       </Showcase>
-
       <h2>Reflection</h2>
       <p>Throughout the project, we may have been too ambitious about the issues we were trying to address. Trying to reduce gender dysphoria with a brand that was fairly feminine was difficult, and reducing the stigma around periods could have been its own project. It was worthwhile to try, but deciding on one opportunity earlier in the project would have allowed more time for iteration and validation.</p>
+      <MoreProjects projects={['roar', 'winebox', 'leadrx', 'privileged']}/>
     </Project>
   </Layout>
 )
