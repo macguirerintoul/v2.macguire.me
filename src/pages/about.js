@@ -8,7 +8,6 @@ import Showcase from '../components/Showcase'
 import AboutLists from '../components/AboutLists'
 
 import profile from '../images/profile.jpg'
-import resume from '../Macguire Rintoul - Resume.pdf'
 
 const StyledHistory = styled.div`
   font-size: 0.8em;
@@ -47,7 +46,7 @@ const About = () => (
       <p></p>
       <p>When I'm not doing that, you can catch me <a href="https://www.mixcloud.com/weirdnite/" target="_blank">DJing</a>, <a href="https://soundcloud.com/weirdnite" target="_blank">making my own beats</a>, and <a href="https://www.youtube.com/watch?v=Y6LMuJN_3mU" target="_blank">editing travel videos</a>.</p>
       <p>
-        <a href="https://www.linkedin.com/in/mrintoul/" target="_blank">LinkedIn</a> — <a href="https://github.com/mrintoul" target="_blank">GitHub</a> — <a href="https://open.spotify.com/artist/28vG51nTNaNgITsMjBbTHm" target="_blank">Spotify</a>— <a href={resume} target="_blank">Resume</a>
+        <a href="https://www.linkedin.com/in/mrintoul/" target="_blank">LinkedIn</a> — <a href="https://github.com/mrintoul" target="_blank">GitHub</a> — <a href="https://open.spotify.com/artist/28vG51nTNaNgITsMjBbTHm" target="_blank">Spotify</a>— <a href="https://drive.google.com/open?id=1ofsMtTyvJxCSjYBhOo5Bnp5K4VxsXLuj" target="_blank">Resume</a>
       </p>
       <p>mrintoul@sfu.ca</p>
       </Project>

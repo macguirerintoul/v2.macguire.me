@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 import Layout from '../components/layout'
+import thumbnailMyCredit from '../images/thumbnail-mycredit.jpg'
 import thumbnailTheSwitch from '../images/thumbnail-the-switch.jpg'
 import thumbnailRoar from '../images/thumbnail-roar.jpg'
 import thumbnailWinebox from '../images/thumbnail-winebox.jpg'
@@ -162,6 +163,10 @@ const IndexPage = () => (
   <Layout>
     <Intro>experience designer<LineBreak/> + developer</Intro>
     <ProjectsContainer>
+      <ProjectCard path="/mycredit/" thumbnail={thumbnailMyCredit}>
+        <h2>MyCredit</h2>
+        <p>Mobile app to help Vancity members understand and build credit to support their financial well-being</p>
+      </ProjectCard>
       <ProjectCard path="/theswitch/" thumbnail={thumbnailTheSwitch}>
         <h2>The Switch</h2>
         <p>Web app introduction to menstrual cups that aims to address apprehensions and increase customer confidence</p>
