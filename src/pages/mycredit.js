@@ -6,6 +6,7 @@ import Project from '../components/Project'
 import Figure from '../components/Figure'
 import ProjectInformation from '../components/ProjectInformation'
 import Showcase from '../components/Showcase'
+import MoreProjects from '../components/MoreProjects'
 
 import onboarding from '../videos/mycredit/onboarding.mp4'
 import scoreDetails from '../videos/mycredit/score-details.mp4'
@@ -197,6 +198,8 @@ const MyCredit = () => (
       <Showcase type='image' src={whyVancity} alt="Why Vancity?" />
       <Showcase type='image' src={whySeparate} alt="Why a separate app?" />
       <Showcase type='image' src={whyDownload} alt="Why would people download MyCredit?" />
+
+      <MoreProjects projects={['roar', 'winebox', 'leadrx', 'privileged']}/>
 
       <script src="https://player.vimeo.com/api/player.js"></script>
     </Project>
