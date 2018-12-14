@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from 'styled-components'
 
 import Layout from '../components/layout'
 import Project from '../components/Project'
@@ -29,6 +30,21 @@ import styleGuide from '../media/mycredit/style-guide.png'
 import appArchitecture from '../media/mycredit/app-architecture.png'
 import tips from '../media/mycredit/tips.png'
 import decliningScore from '../media/mycredit/decliningScore.png'
+import measuringSuccess from '../media/mycredit/measuring-success.png'
+import noCredit from '../media/mycredit/no-credit.png'
+import whyVancity from '../media/mycredit/why-vancity.png'
+import whySeparate from '../media/mycredit/why-separate.png'
+import whyDownload from '../media/mycredit/why-download.png'
+
+const TwoByTwo = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  div {
+    flex: 0 0 50%;
+    margin-bottom: 2em;
+    padding-right: 1em;
+  }
+`
 
 const MyCredit = () => (
   <Layout>
@@ -113,6 +129,8 @@ const MyCredit = () => (
 
       <Showcase type='image' src={validation} alt="The results of user testing" />
 
+      <p>We then got to work making iterations and finalizing MyCredit.</p>
+
       <h2>Details</h2>
       <p>The following explains the details of our design decisions and highlights where decisions were made in MyCredit.</p>
 
@@ -124,6 +142,7 @@ const MyCredit = () => (
 
       <Showcase type='image' src={appArchitecture} alt="The full app architecture" />
 
+      <h2>Product</h2>
       <Showcase horizontal type='video' src={otherAccounts} alt="Members can see how their other accounts are influencing their score via MX Technologies.">
         <p>Members can link credit accounts from other financial institutions via MX Technologies to receive payment reminders, view balances, and see how the account influences their score.</p>
       </Showcase>
@@ -140,9 +159,44 @@ const MyCredit = () => (
         <p>Celebrating accomplishments and recognizing members for their efforts encourages them along their credit building journey.</p>
       </Showcase>
 
-      <Showcase type='image' src={decliningScore} alt="Prediction of future growth that could be achieved provides encouragement and hope to build their score.">
-        <p>Prediction of future growth that could be achieved provides encouragement and hope to build their score.</p>
-      </Showcase>
+      <p>In the case that a member's score is declining, after user testing, we decided to always project their score as if they were taking on the good habits presented in MyCredit. Research participants felt that there was enough information in the rest of the app to understand that their score was low, and that they didn't want the visual reminder that it was declining.</p>
+
+      <Showcase type='image' src={decliningScore} alt="Prediction of future growth that could be achieved provides encouragement and hope to build their score." />
+
+      <p>In the case that a member has no credit, MyCredit offers an explanation of why it's important and recommends ways to start.</p>
+
+      <Showcase type='image' src={noCredit} alt="In the case that a member has no credit, MyCredit offers an explanation of why it's important and recommends ways to start." />
+
+      <h2>Wrap-Up</h2>
+      <h3>Key Performance Indicators</h3>
+
+      <Showcase type='image' src={measuringSuccess} alt="Measuring success" />
+
+      <h3>Dependencies</h3>
+      <TwoByTwo>
+        <div>
+          <h4>Borrowell</h4>
+          <p>A vendor that provides credit scores of individuals to financial institutions.</p>
+        </div>
+        <div>
+          <h4>MX Technologies</h4>
+          <p>A vendor that provides access to information about banking and credit acounts across all financial institutions.</p>
+        </div>
+        <div>
+          <h4>Central 1</h4>
+          <p>As a service provider to Vancity and other credit unions, Central 1 will need to collect and manage additional data from members.</p>
+        </div>
+        <div>
+          <h4>Additional Staff</h4>
+          <p>Vancity or their digital partners will require additional managers, designers, and developers to maintain a second mobile app.</p>
+        </div>
+      </TwoByTwo>
+
+      <h2>Appendix</h2>
+
+      <Showcase type='image' src={whyVancity} alt="Why Vancity?" />
+      <Showcase type='image' src={whySeparate} alt="Why a separate app?" />
+      <Showcase type='image' src={whyDownload} alt="Why would people download MyCredit?" />
 
       <script src="https://player.vimeo.com/api/player.js"></script>
     </Project>
