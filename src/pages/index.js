@@ -3,9 +3,10 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 import Layout from '../components/layout'
+import thumbnailMyCredit from '../media/index/thumbnail-mycredit.jpg'
 import thumbnailTheSwitch from '../images/thumbnail-the-switch.jpg'
 import thumbnailRoar from '../images/thumbnail-roar.jpg'
-import thumbnailWinebox from '../images/thumbnail-winebox.jpg'
+import thumbnailWinebox from '../media/index/thumbnail-winebox.jpg'
 import thumbnailLeadRx from '../images/thumbnail-leadrx.jpg'
 import thumbnailSFUCode from '../images/thumbnail-sfu-code.png'
 import thumbnailPrivileged from '../images/thumbnail-privileged.png'
@@ -162,13 +163,17 @@ const IndexPage = () => (
   <Layout>
     <Intro>experience designer<LineBreak/> + developer</Intro>
     <ProjectsContainer>
-      <ProjectCard path="/theswitch/" thumbnail={thumbnailTheSwitch}>
-        <h2>The Switch</h2>
-        <p>Web app introduction to menstrual cups that aims to address apprehensions and increase customer confidence</p>
+      <ProjectCard path="/mycredit/" thumbnail={thumbnailMyCredit}>
+        <h2>MyCredit</h2>
+        <p>Mobile app to help Vancity members understand and build credit to support their financial well-being</p>
       </ProjectCard>
       <ProjectCard path="/roar/" thumbnail={thumbnailRoar}>
         <h2>ROAR</h2>
         <p>Web app that allows Vancouver Coastal Health to more easily manage new hires and their staff orientation sessions</p>
+      </ProjectCard>
+      <ProjectCard path="/theswitch/" thumbnail={thumbnailTheSwitch}>
+        <h2>The Switch</h2>
+        <p>Web app introduction to menstrual cups that aims to address apprehensions and increase customer confidence</p>
       </ProjectCard>
       <ProjectCard path="/winebox/" thumbnail={thumbnailWinebox}>
         <h2>Winebox</h2>

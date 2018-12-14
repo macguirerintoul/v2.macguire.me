@@ -8,6 +8,7 @@ const StyledMoreProjects = styled.div`
   width: 100%;
   display: flex;
   flex-basis: 0;
+  margin-top: 2em;
   flex-wrap: wrap;
   min-height: 8rem;
   a {

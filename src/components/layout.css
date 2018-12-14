@@ -80,6 +80,13 @@ h6,
   letter-spacing: -0.02em;
 }
 
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'colfaxRegular';
+}
+
 h1 {
   font-size: 4.3em;
 }

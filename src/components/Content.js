@@ -3,6 +3,10 @@ import styled from 'styled-components'
 const Content = styled.div`
   font-size: 1.5em;
 
+  blockquote footer {
+    text-align: right;
+  }
+
   li + li {
     margin-top: 0.25em;
   }
