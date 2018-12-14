@@ -51,7 +51,7 @@ const MyCredit = () => (
   <Layout>
     <Project>
       <h1>MyCredit</h1>
-      <p>Mobile app for Vancity members to understand and build credit, in order to better support their financial well-being. The four-week project is a hypothetical product for <a href="https://www.vancity.com" target="_blank">Vancity</a>, and is not affiliated with the brand.</p>
+      <p>A mobile app for Vancity members to understand and build credit, in order to better support their financial well-being. The four-week project is a hypothetical product for <a href="https://www.vancity.com" target="_blank">Vancity</a>, and is not affiliated with the brand.</p>
       <ProjectInformation client='4 week project for a senior design course' roles={['Content Strategy', 'Project Management', 'Interface Design']} tools={['Sketch', 'Keynote', 'G Suite']} />
 
       <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
