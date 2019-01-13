@@ -57,14 +57,14 @@ const MyCredit = () => (
       </div>
 
       <h2>Problem</h2>
-      <p>Despite the importance of credit scores, an estimated 56% of Canadians have never checked their credit score, and 31% don't know the steps to achieve a good score.</p>
+      <p>Despite the importance of credit scores in personal finance, an estimated 56% of Canadians have never checked their credit score and 31% don't know how to improve their score.</p>
       <h2>Opportunity</h2>
       <blockquote cite="http://annualreport.vancity.com/_doc/2017_Vancity_AR%20PDF_LINKS.pdf">
         <p>"With 250,000 of them – close to half of our members – interacting with us almost entirely online or via our mobile app, we’re under pressure to deliver even more mobile and digital functionality."</p>
         <footer>— <a href="http://annualreport.vancity.com/_doc/2017_Vancity_AR%20PDF_LINKS.pdf">Vancity 2017 Annual Report</a></footer>
       </blockquote>
 
-      <p>Vancity's current website offers some credit help, but it lies 4 levels deep in navigation. Their existing banking app has yet to provide resources for credit management.</p>
+      <p>Vancity's current website offers some credit help, but it lies 4 levels deep in navigation. Furthermore, their existing banking app has yet to provide resources for credit management.</p>
 
       <h2>Solution</h2>
       <p>MyCredit is a companion app for Vancity members to manage their credit and set goals that encourage credit building, to better support their financial well-being.</p>
@@ -78,11 +78,11 @@ const MyCredit = () => (
       </Showcase>
 
       <Showcase horizontal mediaPosition="after" type='video' src={scoreDetails} alt='The Score Details screen' >
-        <p>The Score Details screen provides members with an overview of their score.</p>
+        <p>The Score Details screen provides members with an overview of their score, as well as a breakdown of what is influencing their score.</p>
       </Showcase>
 
       <Showcase horizontal type='video' src={learn} alt='The Learn tab' >
-        <p>The Learn tab educates members about the five factors that influence their score, and shows them how ther activity is influencing their score.</p>
+        <p>The Learn tab provides resources for members to better understand the five factors that influence their score, and how their financial activity is influencing their score.</p>
       </Showcase>
 
       <Showcase horizontal mediaPosition="after" type='video' src={goals} alt='The Goals tab' >
