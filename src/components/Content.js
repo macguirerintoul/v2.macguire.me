@@ -90,8 +90,8 @@ const Content = styled.div`
   }
 
   & blockquote {
-    background-color: whitesmoke;
-    border-left: 5px solid #dbdbdb;
+    background-color: rgba(0, 0, 0, 0.02);
+    border-left: 5px solid #0024D4;
     padding: 1.25em 1.5em;
   }
 
