@@ -9,12 +9,10 @@ import MoreProjects from '../components/MoreProjects'
 import primaryVideo from '../videos/the-switch/primary.mp4'
 import landingVideo from '../videos/the-switch/landing.mp4'
 import secondaryVideo from '../videos/the-switch/secondary.mp4'
-import benefitsVideo from '../videos/the-switch/benefits.mp4'
 import instagramVideo from '../videos/the-switch/instagram.mp4'
 import facebookVideo from '../videos/the-switch/facebook.mp4'
 import purchaseVideo from '../videos/the-switch/purchase.mp4'
 
-import tamponsImage from '../images/the-switch-tampons.png'
 import productApprehension from '../images/the-switch-product-apprehension.jpg'
 import establishedHabits from '../images/the-switch-established-habits.jpg'
 import opportunity from '../images/the-switch-opportunity.jpg'
@@ -27,16 +25,16 @@ const TheSwitch = () => (
   <Layout>
     <Project>
       <h1>The Switch</h1>
-      <p>An online introduction to menstrual cups aiming to address first-time user apprehensions and increase customer confidence. The four-week project is a hypothetical product for <a href='https://lenacup.com/' target='_blank'>Lena</a>, and is not affiliated with the brand.</p>
+      <p>An online introduction to menstrual cups aiming to address first-time user apprehensions and increase customer confidence. The four-week project is a hypothetical product for <a href='https://lenacup.com/' target='_blank' rel="noreferrer noopener">Lena</a>, and is not affiliated with the brand.</p>
       <ProjectInformation client='4 week project for a senior design course' roles={['Content Strategy', 'Project Management']} tools={['Keynote', 'G Suite']} />
       <Showcase type='video' src={primaryVideo} alt='The primary information presented in The Switch' >
         <p>The Switch is comprised of five steps which answer major questions about menstrual cups, to reduce frictions within the customer journey. Content above the fold is concise to ease visitors in, with further details provided below.</p>
       </Showcase>
 
       <h2>Problem</h2>
-      <p>Despite physical, environmental, and financial benefits of menstrual cups, lack of exposure in mainstream media and markets has prevented their widespread use. The majority of menstruators already use tampons, pads, and/or liners, and are not convinced to undertake the physical and emotional risk of switching menstrual hygiene products. While the Lena Cup is <a href="https://www.cosmopolitan.com/sex-love/a13126155/best-menstrual-cups/" target="_blank">recognized</a> as the <a href="https://www.bustle.com/p/the-5-best-menstrual-cups-for-beginners-8797916" target="_blank">#1 cup for beginners</a>, Lena's existing site does not effectively communicate the product's value and benefits to potential customers.</p>
+      <p>Despite physical, environmental, and financial benefits of menstrual cups, lack of exposure in mainstream media and markets has prevented their widespread use. The majority of menstruators already use tampons, pads, and/or liners, and are not convinced to undertake the physical and emotional risk of switching menstrual hygiene products. While the Lena Cup is <a href="https://www.cosmopolitan.com/sex-love/a13126155/best-menstrual-cups/" target="_blank" rel="noopener noreferrer">recognized</a> as the <a href="https://www.bustle.com/p/the-5-best-menstrual-cups-for-beginners-8797916" target="_blank" rel="noopener noreferrer">#1 cup for beginners</a>, Lena's existing site does not effectively communicate the product's value and benefits to potential customers.</p>
 
-      <div style={{padding:'56.25% 0 0 0', position:'relative'}}><iframe src="https://player.vimeo.com/video/301757528?title=0&byline=0&portrait=0" style={{position:'absolute',top:0,left:0, width:'100%', height: '100%'}} frameborder="0" webkitallowfullscreen mozallowfullscreen AllowFullScreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+      <div style={{padding:'56.25% 0 0 0', position:'relative'}}><iframe title="The Switch Introduction Video" src="https://player.vimeo.com/video/301757528?title=0&byline=0&portrait=0" style={{position:'absolute',top:0,left:0, width:'100%', height: '100%'}} frameborder="0" webkitallowfullscreen mozallowfullscreen AllowFullScreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
       <h2>Solution</h2>
       <p>The Switch by Lena directly addresses false assumptions, apprehensions, and concerns consumers may have about menstrual cups.</p>
@@ -55,7 +53,7 @@ const TheSwitch = () => (
 
       <p>Our survey of over 450 respondents suggested that most customers were convinced to try a menstrual cup by a close friend or sibling. To create a meaningful experience, the team decided to strategize content from the perspective of a supportive, older sister. As the content strategist, I ensured that all content followed this principle and had a consistent tone and attitude.</p>
 
-      <div style={{padding:'56.25% 0 0 0', position:'relative'}}><iframe src="https://player.vimeo.com/video/301758677?title=0&byline=0&portrait=0" style={{position:'absolute',top:0,left:0, width:'100%', height: '100%'}} frameborder="0" webkitallowfullscreen mozallowfullscreen AllowFullScreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+      <div style={{padding:'56.25% 0 0 0', position:'relative'}}><iframe title="The Switch Persona Video" src="https://player.vimeo.com/video/301758677?title=0&byline=0&portrait=0" style={{position:'absolute',top:0,left:0, width:'100%', height: '100%'}} frameborder="0" webkitallowfullscreen mozallowfullscreen AllowFullScreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
       <h2>Process</h2>
       <p>After identifying business problems within the menstrual cup market, we identified frictions with Lena's existing website. Information was scattered across multiple pages, and neglected to highlight the product’s extensive benefits. We then conducted a survey to understand peoples' perception of cups and the factors influencing this perception, in order to design a digital experience that encouraged visitors to try the product.</p>

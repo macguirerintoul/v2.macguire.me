@@ -3,7 +3,6 @@ import styled from 'styled-components'
 
 import Layout from '../components/layout'
 import Project from '../components/Project'
-import Figure from '../components/Figure'
 import ProjectInformation from '../components/ProjectInformation'
 import Showcase from '../components/Showcase'
 import MoreProjects from '../components/MoreProjects'
@@ -27,7 +26,6 @@ import principles from '../media/mycredit/principles.png'
 import copywriting from '../media/mycredit/copywriting.png'
 import colour from '../media/mycredit/colour.png'
 import type from '../media/mycredit/type.png'
-import styleGuide from '../media/mycredit/style-guide.png'
 import appArchitecture from '../media/mycredit/app-architecture.png'
 import tips from '../media/mycredit/tips.png'
 import decliningScore from '../media/mycredit/decliningScore.png'
@@ -51,11 +49,11 @@ const MyCredit = () => (
   <Layout>
     <Project>
       <h1>MyCredit</h1>
-      <p>A mobile app for Vancity members to understand and build credit, in order to better support their financial well-being. The four-week project is a hypothetical product for <a href="https://www.vancity.com" target="_blank">Vancity</a>, and is not affiliated with the brand.</p>
+      <p>A mobile app for Vancity members to understand and build credit, in order to better support their financial well-being. The four-week project is a hypothetical product for <a href="https://www.vancity.com" target="_blank" rel="noopener noreferrer">Vancity</a>, and is not affiliated with the brand.</p>
       <ProjectInformation client='4 week project for a senior design course' roles={['Content Strategy', 'Project Management', 'Interface Design']} tools={['Sketch', 'Keynote', 'G Suite']} />
 
       <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
-        <iframe src="https://player.vimeo.com/video/305425536?byline=0&portrait=0" style={{'position':'absolute','top':0,'left':0,'width':'100%','height':'100%'}} frameBorder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowFullScreen></iframe>
+        <iframe title="MyCredit Introduction Video" src="https://player.vimeo.com/video/305425536?byline=0&portrait=0" style={{'position':'absolute','top':0,'left':0,'width':'100%','height':'100%'}} frameBorder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowFullScreen></iframe>
       </div>
 
       <h2>Problem</h2>
@@ -72,7 +70,7 @@ const MyCredit = () => (
       <p>MyCredit is a companion app for Vancity members to manage their credit and set goals that encourage credit building, to better support their financial well-being.</p>
 
       <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
-        <iframe src="https://player.vimeo.com/video/305425815?byline=0&portrait=0" style={{'position':'absolute','top':0,'left':0,'width':'100%','height':'100%'}} frameBorder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowFullScreen></iframe>
+        <iframe title="MyCredit Persona Video" src="https://player.vimeo.com/video/305425815?byline=0&portrait=0" style={{'position':'absolute','top':0,'left':0,'width':'100%','height':'100%'}} frameBorder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowFullScreen></iframe>
       </div>
 
       <Showcase horizontal type='video' src={onboarding} alt='Onboarding for MyCredit' >

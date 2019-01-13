@@ -44,9 +44,9 @@ const About = () => (
         </div>
       </Showcase>
       <p></p>
-      <p>When I'm not doing that, you can catch me <a href="https://www.mixcloud.com/weirdnite/" target="_blank">DJing</a>, <a href="https://soundcloud.com/weirdnite" target="_blank">making my own beats</a>, and <a href="https://www.youtube.com/watch?v=Y6LMuJN_3mU" target="_blank">editing travel videos</a>.</p>
+      <p>When I'm not doing that, you can catch me <a href="https://www.mixcloud.com/weirdnite/" target="_blank" rel="noopener noreferrer">DJing</a>, <a href="https://soundcloud.com/weirdnite" target="_blank" rel="noopener noreferrer">making my own beats</a>, and <a href="https://www.youtube.com/watch?v=Y6LMuJN_3mU" target="_blank" rel="noopener noreferrer">editing travel videos</a>.</p>
       <p>
-        <a href="https://www.linkedin.com/in/mrintoul/" target="_blank">LinkedIn</a> — <a href="https://github.com/mrintoul" target="_blank">GitHub</a> — <a href="https://open.spotify.com/artist/28vG51nTNaNgITsMjBbTHm" target="_blank">Spotify</a>— <a href="https://drive.google.com/open?id=1ofsMtTyvJxCSjYBhOo5Bnp5K4VxsXLuj" target="_blank">Resume</a>
+        <a href="https://www.linkedin.com/in/mrintoul/" target="_blank" rel="noopener noreferrer">LinkedIn</a> — <a href="https://github.com/mrintoul" target="_blank" rel="noopener noreferrer">GitHub</a> — <a href="https://open.spotify.com/artist/28vG51nTNaNgITsMjBbTHm" target="_blank" rel="noopener noreferrer">Spotify</a>— <a href="https://drive.google.com/open?id=1ofsMtTyvJxCSjYBhOo5Bnp5K4VxsXLuj" target="_blank" rel="noopener noreferrer">Resume</a>
       </p>
       <p>mrintoul@sfu.ca</p>
       </Project>

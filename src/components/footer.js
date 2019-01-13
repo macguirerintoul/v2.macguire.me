@@ -16,7 +16,7 @@ const Footer = () => (
     <StyledFooter>
 
         <p>&copy; 2018 Macguire Rintoul</p>
-        <p>shout out to <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> + <a href="https://www.netlify.com/" target="_blank">Netlify</a></p>
+        <p>shout out to <a href="https://www.gatsbyjs.org/" target="_blank" rel="noopener noreferrer">Gatsby</a> + <a href="https://www.netlify.com/" target="_blank" rel="noopener noreferrer">Netlify</a></p>
 
     </StyledFooter>
   </Container>

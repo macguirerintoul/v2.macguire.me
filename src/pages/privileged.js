@@ -2,7 +2,6 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import Project from '../components/Project'
-import Figure from '../components/Figure'
 import ProjectInformation from '../components/ProjectInformation'
 import Showcase from '../components/Showcase'
 import MoreProjects from '../components/MoreProjects'
@@ -20,7 +19,7 @@ const Privileged = () => (
       <h1>Privileged</h1>
       <p>Privileged.tech is a digital implementation of a privilege walk, aimed at reconciling privilege in the technology field. The majority of the project was completed in 24 hours as part of nwHacks 2018, with finishing touches done afterward.</p>
 
-      <a href="http://www.privileged.tech/" target="_blank">Live App</a> — <a href="https://github.com/FlyteWizard/privileged" target="_blank">GitHub</a>
+      <a href="http://www.privileged.tech/" target="_blank" rel="noopener noreferrer">Live App</a> — <a href="https://github.com/FlyteWizard/privileged" target="_blank" rel="noopener noreferrer">GitHub</a>
 
       <ProjectInformation client='24-hour hackathon project' roles={['Full-Stack Web Development']} tools={['React', 'Firebase', 'Heroku']} />
 
@@ -52,7 +51,7 @@ const Privileged = () => (
         <p>To end it off, participants are given resources to help them acknowledge and address the privileges they have or to support initiatives with a similar mission.</p>
       </Showcase>
 
-      <a href="http://www.privileged.tech/" target="_blank">Live App</a> — <a href="https://github.com/FlyteWizard/privileged" target="_blank">GitHub</a>
+      <a href="http://www.privileged.tech/" target="_blank" rel="noopener noreferrer">Live App</a> — <a href="https://github.com/FlyteWizard/privileged" target="_blank" rel="noopener noreferrer">GitHub</a>
 
       <MoreProjects projects={['theswitch', 'roar', 'winebox', 'leadrx']}/>
     </Project>

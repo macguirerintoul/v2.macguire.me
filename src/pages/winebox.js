@@ -2,12 +2,10 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import Project from '../components/Project'
-import Figure from '../components/Figure'
 import ProjectInformation from '../components/ProjectInformation'
 import Showcase from '../components/Showcase'
 import MoreProjects from '../components/MoreProjects'
 
-import wineboxHero from '../images/thumbnail-winebox.jpg'
 import persona from '../images/winebox-persona.png'
 import experienceMapOne from '../images/winebox-experience-map-1.jpg'
 import experienceMapTwo from '../images/winebox-experience-map-2.jpg'
