@@ -45,7 +45,7 @@ const ROAR = () => (
         <p>The employee's schedule is generated based on the registration form, and can be reviewed in-browser and sent to the employee</p>
       </Showcase>
 
-      <h2 className='title is-2'>Approach</h2>
+      <h2 className='title is-2'>Process</h2>
       <p>Clinical Education staff initially approached our team asking how the amount of manual labour involved in the registration process could be reduced. After evaluating the workflow from end to end, I confirmed that much of the work that people were doing could be accomplished using relatively simple technologies. This led me to my initial problem frame:</p>
 
       <blockquote>How might we leverage technology to reduce the time spent on new hire registration?</blockquote>
@@ -58,10 +58,9 @@ const ROAR = () => (
 
       <blockquote>How might we rethink the way the registration is submitted to eliminate work for the person submitting the form?</blockquote>
 
-      <h2 className='title is-2'>Design</h2>
       <p>Due to the complexity of the project, CEAs and Recruitment Associates provided input every step of the way. This made sure that we were designing something that was similar enough to their existing workflow to be understandable, but also made things more efficient where possible. </p>
 
-      <h2 className='title is-2'>Implementation</h2>
+      <h2 className='title is-2'>Development</h2>
       <p><a href="https://laravel.com/" target="_blank" rel="noreferrer noopener">Laravel</a> and <a href="https://reactjs.org/" target="_blank" rel="noreferrer noopener">React</a> were used to create a system that was available over the Internet to anyone that needed to submit a registration, and to CEAs no matter the location. The <a href="https://ant.design/" target="_blank" rel="noreferrer noopener">Ant Design</a> UI library was used to create a product that was visually similar to the mockups without spending too much time creating custom components.</p>
 
       <h2 className='title is-2'>Outcomes</h2>

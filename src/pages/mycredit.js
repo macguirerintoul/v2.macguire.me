@@ -62,7 +62,7 @@ const MyCredit = () => (
 
       <h2>Problem</h2>
       <p>Despite the importance of credit scores in personal finance, an estimated 56% of Canadians have never checked their credit score and 31% don't know how to improve their score.</p>
-      <h2>Opportunity</h2>
+
       <blockquote cite="http://annualreport.vancity.com/_doc/2017_Vancity_AR%20PDF_LINKS.pdf">
         <p>"With 250,000 of them – close to half of our members – interacting with us almost entirely online or via our mobile app, we’re under pressure to deliver even more mobile and digital functionality."</p>
         <footer>— <a href="http://annualreport.vancity.com/_doc/2017_Vancity_AR%20PDF_LINKS.pdf">Vancity 2017 Annual Report</a></footer>
@@ -92,8 +92,6 @@ const MyCredit = () => (
       <Showcase horizontal mediaPosition="after" type='video' src={goals} alt='The Goals tab' >
         <p>The Goals tab allows members to track their progress, see the steps they need to take to improve their score, and set new goals.</p>
       </Showcase>
-
-
 
       <h2>Process</h2>
       <p>After discovering the study by BMO, we decided that as a values-based non-profit organization, Vancity would be a great client to design for. We audited Vancity's existing products and services, and identified frictions.</p>

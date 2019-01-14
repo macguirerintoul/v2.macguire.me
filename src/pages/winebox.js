@@ -66,7 +66,7 @@ const Winebox = () => (
         <p>A confirmation dialog is shown when the last wine is about to be removed</p>
       </Showcase>
 
-      <h2>Approach</h2>
+      <h2>Process</h2>
       <p>To better understand the opportunity, we interviewed five semi-serious wine collectors and collected surveys from eighteen. From this research, we were able to identify wants and frustrations, and better understand the ways in which wine was part of people's lives.</p>
 
       <Showcase type='image' src={persona} alt='Zameel, the persona used for Winebox'>
@@ -77,7 +77,6 @@ const Winebox = () => (
 
       <blockquote>How might we help people keep tabs on their collections and avoid losing the details?</blockquote>
 
-      <h2>Taking it Further</h2>
       <p>Further research revealed that people engage with wine in a variety of contexts; at home, at dinner with friends, at liquor stores. We also noted that people could make use of their collection information in any of these contexts.</p>
       <blockquote>How might we provide a companion for the various situations that surround wine?</blockquote>
 

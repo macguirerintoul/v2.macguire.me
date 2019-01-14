@@ -29,8 +29,8 @@ const LeadRx = () => (
         <p>Browsing content in LeadRx</p>
       </Showcase>
 
-      <h2>Brief</h2>
-      <p>LeadRx is a Vancouver Coastal Health initiative to encourage managers to become more confident in their positions. The LeadRx app is a repository for professional development content to support this initative. The app was originally created before I was hired, and I was asked to improve the interface and implement the changes.</p>
+      <h2>Problem</h2>
+      <p>LeadRx is a Vancouver Coastal Health initiative to encourage managers to become more confident in their positions. The LeadRx app is a repository for professional development content to support this initative. The app was originally created before I was hired but had not been launched yet, and I was asked to improve the interface and implement the changes.</p>
 
       <h2>Solution</h2>
       <p>The updated LeadRx app uses space more effectively, communicates information more clearly, and uses more modern visual styles.</p>
@@ -55,8 +55,8 @@ const LeadRx = () => (
         <p>The Settings screen provides options to clear history, view the privacy statement, or sign out</p>
       </Showcase>
 
-      <h2>Design</h2>
-      <p>Although the app already existed, additional user research was conducted to better understand who the app was intended for. An online survey was conducted and a stripped-down user journey was mapped out to emphasize managers' goals and highlight what the app should be able to provide.</p>
+      <h2>Process</h2>
+      <p>Although the app already existed, I conducted additional user research to better understand who the app was intended for. An online survey was conducted and a stripped-down user journey was mapped out to emphasize managers' goals and highlight what the app should be able to provide.</p>
 
       <Showcase type='image' src={userJourney} alt='The preliminary user journey for LeadRx'>
         <p>the preliminary user journey</p>
