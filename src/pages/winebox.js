@@ -19,7 +19,7 @@ const Winebox = () => (
   <Layout>
     <Project>
       <h1>Winebox</h1>
-      <p>Winebox is an iPad application that elegantly assists in keeping track of a personal wine collection.</p>
+      <p>Winebox is an iPad app that assists in keeping track of a personal wine collection.</p>
       <ProjectInformation client='6 week project for a senior design course' roles={['Interface Design', 'Interaction Design', 'User Research']} tools={['Sketch', 'Flinto']} />
       <Showcase horizontal type='video' src={collection} alt='The Collection screen of Winebox' caption='The Collection screen of Winebox'>
         <p>The collection screen of Winebox</p>
