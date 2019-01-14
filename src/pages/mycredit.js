@@ -203,7 +203,7 @@ const MyCredit = () => (
       <Showcase type='image' src={whySeparate} alt="Why a separate app?" />
       <Showcase type='image' src={whyDownload} alt="Why would people download MyCredit?" />
 
-      <MoreProjects projects={['roar', 'winebox', 'leadrx', 'privileged']}/>
+      <MoreProjects projects={['roar', 'theswitch', 'winebox', 'leadrx']}/>
 
       <script src="https://player.vimeo.com/api/player.js"></script>
     </Project>
