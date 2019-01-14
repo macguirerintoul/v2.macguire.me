@@ -31,6 +31,9 @@ const TheSwitch = () => (
         <p>The Switch is comprised of five steps which answer major questions about menstrual cups, to reduce frictions within the customer journey. Content above the fold is concise to ease visitors in, with further details provided below.</p>
       </Showcase>
 
+      <h2>My Contribution</h2>
+      <p>As the project manager, I ensured the various parts of the project were being completed according to our project timeline, and made sure they were cohesive. As the content strategist, I wrote and validated copy in the voice of a 'supportive older sister'. I also developed and promoted a qualitative and quantitative research survey that received over 450 responses, which heavily informed the project's direction.</p>
+
       <h2>Problem</h2>
       <p>Despite physical, environmental, and financial benefits of menstrual cups, lack of exposure in mainstream media and markets has prevented their widespread use. The majority of menstruators already use tampons, pads, and/or liners, and are not convinced to undertake the physical and emotional risk of switching menstrual hygiene products. While the Lena Cup is <a href="https://www.cosmopolitan.com/sex-love/a13126155/best-menstrual-cups/" target="_blank" rel="noopener noreferrer">recognized</a> as the <a href="https://www.bustle.com/p/the-5-best-menstrual-cups-for-beginners-8797916" target="_blank" rel="noopener noreferrer">#1 cup for beginners</a>, Lena's existing site does not effectively communicate the product's value and benefits to potential customers.</p>
 
