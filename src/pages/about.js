@@ -6,8 +6,6 @@ import Lightbox from 'react-images'
 import Layout from '../components/layout'
 import Project from '../components/Project'
 import Showcase from '../components/Showcase'
-import AboutLists from '../components/AboutLists'
-import UnorderedList from '../components/molecules/UnorderedList'
 
 import resume from '../media/Macguire Rintoul - Resume.png'
 
