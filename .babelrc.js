@@ -1,8 +1,8 @@
-{
-  "presets": [
+module.exports = {
+  presets: [
 
   ],
-  "plugins": [
+  plugins: [
     "babel-plugin-styled-components",
   ]
 }
