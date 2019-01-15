@@ -72,8 +72,8 @@ class Header extends Component {
             <div className="navbar-end">
               <a className="navbar-item" href="/">Home</a>
               <a className="navbar-item" href="/about">About</a>
-              <a className="navbar-item" target="_blank" href="https://github.com/mrintoul">GitHub</a>
-              <a className="navbar-item" target="_blank" href="https://linkedin.com/in/mrintoul">LinkedIn</a>
+              <a className="navbar-item" target="_blank" rel="noopener noreferrer" href="https://github.com/mrintoul">GitHub</a>
+              <a className="navbar-item" target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/mrintoul">LinkedIn</a>
             </div>
           </div>
         </StyledNav>

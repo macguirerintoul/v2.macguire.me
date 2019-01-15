@@ -3,7 +3,6 @@ import styled from 'styled-components'
 
 import Layout from '../components/layout'
 import Project from '../components/Project'
-import Figure from '../components/Figure'
 import ProjectInformation from '../components/ProjectInformation'
 import Showcase from '../components/Showcase'
 import MoreProjects from '../components/MoreProjects'
@@ -27,7 +26,6 @@ import principles from '../media/mycredit/principles.png'
 import copywriting from '../media/mycredit/copywriting.png'
 import colour from '../media/mycredit/colour.png'
 import type from '../media/mycredit/type.png'
-import styleGuide from '../media/mycredit/style-guide.png'
 import appArchitecture from '../media/mycredit/app-architecture.png'
 import tips from '../media/mycredit/tips.png'
 import decliningScore from '../media/mycredit/decliningScore.png'
@@ -51,28 +49,32 @@ const MyCredit = () => (
   <Layout>
     <Project>
       <h1>MyCredit</h1>
-      <p>A mobile app for Vancity members to understand and build credit, in order to better support their financial well-being. The four-week project is a hypothetical product for <a href="https://www.vancity.com" target="_blank">Vancity</a>, and is not affiliated with the brand.</p>
-      <ProjectInformation client='4 week project for a senior design course' roles={['Content Strategy', 'Project Management', 'Interface Design']} tools={['Sketch', 'Keynote', 'G Suite']} />
+      <p>A mobile app for Vancity members to understand and build credit, in order to better support their financial well-being. The four-week project is a hypothetical product for <a href="https://www.vancity.com" target="_blank" rel="noopener noreferrer">Vancity</a>, and is not affiliated with the brand.</p>
+
+      <ProjectInformation client='4 week project for a senior design course' roles={['Content Strategy', 'Project Management', 'Interface Design', 'User Research']} tools={['Sketch', 'Keynote', 'G Suite']} />
 
       <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
-        <iframe src="https://player.vimeo.com/video/305425536?byline=0&portrait=0" style={{'position':'absolute','top':0,'left':0,'width':'100%','height':'100%'}} frameBorder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowFullScreen></iframe>
+        <iframe title="MyCredit Introduction Video" src="https://player.vimeo.com/video/305425536?byline=0&portrait=0" style={{'position':'absolute','top':0,'left':0,'width':'100%','height':'100%'}} frameBorder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowFullScreen></iframe>
       </div>
 
+      <h2>My Contribution</h2>
+      <p>As the project manager, I ensured that the project's individual parts were being completed and were cohesive, and decided when to stop iterating and start polishing. As the content strategist, I wrote copy that was consistent with our three design principles: personal, clear, and hopeful. I also ensured that the credit-related content in MyCredit was beneficial and easy to understand, which I validated by conducting interviews and think-aloud testing with 9 participants.</p>
+
       <h2>Problem</h2>
-      <p>Despite the importance of credit scores, an estimated 56% of Canadians have never checked their credit score, and 31% don't know the steps to achieve a good score.</p>
-      <h2>Opportunity</h2>
+      <p>Despite the importance of credit scores in personal finance, an estimated 56% of Canadians have never checked their credit score and 31% don't know how to improve their score.</p>
+
       <blockquote cite="http://annualreport.vancity.com/_doc/2017_Vancity_AR%20PDF_LINKS.pdf">
         <p>"With 250,000 of them – close to half of our members – interacting with us almost entirely online or via our mobile app, we’re under pressure to deliver even more mobile and digital functionality."</p>
         <footer>— <a href="http://annualreport.vancity.com/_doc/2017_Vancity_AR%20PDF_LINKS.pdf">Vancity 2017 Annual Report</a></footer>
       </blockquote>
 
-      <p>Vancity's current website offers some credit help, but it lies 4 levels deep in navigation. Their existing banking app has yet to provide resources for credit management.</p>
+      <p>Vancity's current website offers some credit help, but it lies 4 levels deep in navigation. Furthermore, their existing banking app has yet to provide resources for credit management.</p>
 
       <h2>Solution</h2>
       <p>MyCredit is a companion app for Vancity members to manage their credit and set goals that encourage credit building, to better support their financial well-being.</p>
 
       <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
-        <iframe src="https://player.vimeo.com/video/305425815?byline=0&portrait=0" style={{'position':'absolute','top':0,'left':0,'width':'100%','height':'100%'}} frameBorder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowFullScreen></iframe>
+        <iframe title="MyCredit Persona Video" src="https://player.vimeo.com/video/305425815?byline=0&portrait=0" style={{'position':'absolute','top':0,'left':0,'width':'100%','height':'100%'}} frameBorder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowFullScreen></iframe>
       </div>
 
       <Showcase horizontal type='video' src={onboarding} alt='Onboarding for MyCredit' >
@@ -80,11 +82,11 @@ const MyCredit = () => (
       </Showcase>
 
       <Showcase horizontal mediaPosition="after" type='video' src={scoreDetails} alt='The Score Details screen' >
-        <p>The Score Details screen provides members with an overview of their score.</p>
+        <p>The Score Details screen provides members with an overview of their score, as well as a breakdown of what is influencing their score.</p>
       </Showcase>
 
       <Showcase horizontal type='video' src={learn} alt='The Learn tab' >
-        <p>The Learn tab educates members about the five factors that influence their score, and shows them how ther activity is influencing their score.</p>
+        <p>The Learn tab provides resources for members to better understand the five factors that influence their score, and how their financial activity is influencing their score.</p>
       </Showcase>
 
       <Showcase horizontal mediaPosition="after" type='video' src={goals} alt='The Goals tab' >
@@ -126,22 +128,11 @@ const MyCredit = () => (
 
       <Showcase type='image' src={iterations} alt="The three weeks of iterations" />
 
-      <p>We conducted user research with nine participants, and went in with three assumptions to validate the project. While it was generally well-received, it was noted that the onboarding needed to be improved.</p>
+      <p>A teammate and I conducted user research with nine participants over the course of the project, seeking to validate three assumptions. While the project was generally well-received, it was noted that the onboarding needed to be improved.</p>
 
       <Showcase type='image' src={validation} alt="The results of user testing" />
 
       <p>We then got to work making iterations and finalizing MyCredit.</p>
-
-      <h2>Details</h2>
-      <p>The following explains the details of our design decisions and highlights where decisions were made in MyCredit.</p>
-
-      <Showcase type='image' src={copywriting} alt="Copy was written to be encouraging and informative, and credible but relatable." />
-
-      <Showcase type='image' src={colour} alt="A gradient was used to add depth to Vancity's primary brand red." />
-
-      <Showcase type='image' src={type} alt="Agenda and San Francisco were chosen as typefaces." />
-
-      <Showcase type='image' src={appArchitecture} alt="The full app architecture" />
 
       <h2>Product</h2>
       <Showcase horizontal type='video' src={otherAccounts} alt="Members can see how their other accounts are influencing their score via MX Technologies.">
@@ -167,6 +158,17 @@ const MyCredit = () => (
       <p>In the case that a member has no credit, MyCredit offers an explanation of why it's important and recommends ways to start.</p>
 
       <Showcase type='image' src={noCredit} alt="In the case that a member has no credit, MyCredit offers an explanation of why it's important and recommends ways to start." />
+
+      <h2>Details</h2>
+      <p>The following explains the details of our design decisions and highlights where decisions were made in MyCredit.</p>
+
+      <Showcase type='image' src={copywriting} alt="Copy was written to be encouraging and informative, and credible but relatable." />
+
+      <Showcase type='image' src={colour} alt="A gradient was used to add depth to Vancity's primary brand red." />
+
+      <Showcase type='image' src={type} alt="Agenda and San Francisco were chosen as typefaces." />
+
+      <Showcase type='image' src={appArchitecture} alt="The full app architecture" />
 
       <h2>Wrap-Up</h2>
       <h3>Key Performance Indicators</h3>
@@ -199,7 +201,7 @@ const MyCredit = () => (
       <Showcase type='image' src={whySeparate} alt="Why a separate app?" />
       <Showcase type='image' src={whyDownload} alt="Why would people download MyCredit?" />
 
-      <MoreProjects projects={['roar', 'winebox', 'leadrx', 'privileged']}/>
+      <MoreProjects projects={['roar', 'theswitch', 'winebox', 'leadrx']}/>
 
       <script src="https://player.vimeo.com/api/player.js"></script>
     </Project>

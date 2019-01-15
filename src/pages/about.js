@@ -1,13 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 import {Helmet} from 'react-helmet'
+import Lightbox from 'react-images'
 
 import Layout from '../components/layout'
 import Project from '../components/Project'
 import Showcase from '../components/Showcase'
-import AboutLists from '../components/AboutLists'
 
-import profile from '../images/profile.jpg'
+import resume from '../media/Macguire Rintoul - Resume.png'
 
 const StyledHistory = styled.div`
   font-size: 0.8em;
@@ -28,29 +28,51 @@ const History = (props) => (
   </StyledHistory>
 )
 
-const About = () => (
-  <Layout>
-  <Helmet>
-    <title>About | Macguire Rintoul — Portfolio</title>
-    <link rel="canonical" href="https://mrintoul.com/about" />
-  </Helmet>
-  <Project>
-      <h1>Yours Truly</h1>
-      <Showcase horizontal type='image' src={profile} alt="A very nice photo of me" style={{textAlign: 'left'}}>
-        <div>
-          <p>I'm Macguire, and I’m an undergrad at Simon Fraser University in Vancouver, BC. My major is Interactive Arts & Technology with a concentration in design.</p>
-          <History label='current' items={['Systems Analyst at Vancouver Coastal Health']} />
-          <History label='previous' items={['Multimedia Designer at Vancouver Coastal Health', 'Digital Designer at CanSleep Services']} />
-        </div>
-      </Showcase>
-      <p></p>
-      <p>When I'm not doing that, you can catch me <a href="https://www.mixcloud.com/weirdnite/" target="_blank">DJing</a>, <a href="https://soundcloud.com/weirdnite" target="_blank">making my own beats</a>, and <a href="https://www.youtube.com/watch?v=Y6LMuJN_3mU" target="_blank">editing travel videos</a>.</p>
-      <p>
-        <a href="https://www.linkedin.com/in/mrintoul/" target="_blank">LinkedIn</a> — <a href="https://github.com/mrintoul" target="_blank">GitHub</a> — <a href="https://open.spotify.com/artist/28vG51nTNaNgITsMjBbTHm" target="_blank">Spotify</a>— <a href="https://drive.google.com/open?id=1ofsMtTyvJxCSjYBhOo5Bnp5K4VxsXLuj" target="_blank">Resume</a>
-      </p>
-      <p>mrintoul@sfu.ca</p>
-      </Project>
-  </Layout>
-)
+class About extends React.Component {
+  constructor () {
+		super();
+		this.state = {
+			lightboxIsOpen: false,
+		};
+
+		this.closeLightbox = this.closeLightbox.bind(this);
+		this.openLightbox = this.openLightbox.bind(this);
+	}
+  openLightbox (index, event) {
+		this.setState({
+			lightboxIsOpen: true,
+		});
+	}
+	closeLightbox () {
+		this.setState({
+			lightboxIsOpen: false,
+		});
+	}
+  render() {
+    return(
+      <Layout>
+      <Helmet>
+        <title>About | Macguire Rintoul — Portfolio</title>
+        <link rel="canonical" href="https://mrintoul.com/about" />
+      </Helmet>
+      <Project>
+          <h1>Yours Truly</h1>
+
+          <p>I'm Macguire: an experience designer, full-stack web developer, hackathon participant, music producer, and Interactive Arts & Technology undergraduate at Simon Fraser University in Vancouver, BC.</p>
+
+          <p>When I'm not studying or learning a new web framework, you can catch me <a href="https://www.mixcloud.com/weirdnite/" target="_blank" rel="noopener noreferrer">DJing</a>, <a href="https://soundcloud.com/weirdnite" target="_blank" rel="noopener noreferrer">making my own beats</a>, <a href="https://www.youtube.com/watch?v=Y6LMuJN_3mU" target="_blank" rel="noopener noreferrer">editing travel videos</a>, or hiking the Swiss Alps with my mom.</p>
+
+          <h2>Resume</h2>
+          <img src={resume} alt="Resume - Macguire Rintoul" style={{boxShadow: 'none', marginBottom: '2rem'}}/>
+
+          <p>
+            <a href="https://drive.google.com/open?id=1ofsMtTyvJxCSjYBhOo5Bnp5K4VxsXLuj" target="_blank" rel="noopener noreferrer">Resume (PDF)</a> — <a href="https://www.linkedin.com/in/mrintoul/" target="_blank" rel="noopener noreferrer">LinkedIn</a> — <a href="https://github.com/mrintoul" target="_blank" rel="noopener noreferrer">GitHub</a> — <a href="https://open.spotify.com/artist/28vG51nTNaNgITsMjBbTHm" target="_blank" rel="noopener noreferrer">Spotify</a>
+          </p>
+          </Project>
+      </Layout>
+    );
+
+  }
+}
 
 export default About
